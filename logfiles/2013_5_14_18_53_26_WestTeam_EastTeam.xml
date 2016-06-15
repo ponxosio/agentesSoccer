@@ -1,0 +1,612 @@
+<SoccerBotsLOG>
+<initlog>
+<westTeam name = "WestTeam" >
+<player robotid = "6" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="6" playerid="1">
+<position x = "-0.5" y = "0.0" />
+<heading x = "1.87" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="7" playerid="2">
+<position x = "-0.15" y = "0.5" />
+<heading x = "1.5199999999999998" y = "-0.5000000000000002" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="8" playerid="3">
+<position x = "-0.15" y = "0.0" />
+<heading x = "1.52" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="9" playerid="4">
+<position x = "-0.15" y = "-0.5" />
+<heading x = "1.52" y = "0.5000000000000001" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="10" playerid="0">
+<position x = "-1.2" y = "0.0" />
+<heading x = "2.5700000000000003" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+</westTeam>
+
+<eastTeam name = "EastTeam" >
+<player robotid = "11" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="11" playerid="1">
+<position x = "0.5" y = "0.25" />
+<heading x = "-1.87" y = "-0.2499999999999998" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="12" playerid="2">
+<position x = "0.15" y = "0.5" />
+<heading x = "-1.5200000000000002" y = "-0.4999999999999997" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="13" playerid="3">
+<position x = "0.5" y = "-0.25" />
+<heading x = "-1.8699999999999999" y = "0.2500000000000003" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="14" playerid="4">
+<position x = "0.15" y = "-0.5" />
+<heading x = "-1.52" y = "0.5000000000000001" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="15" playerid="0">
+<position x = "1.2" y = "0.0" />
+<heading x = "-2.5700000000000003" y = "3.147342273808698E-16" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+</eastTeam>
+
+</initlog>
+
+
+
+<log time = "10001" >
+
+<ball>
+  <position x = "0.41919162860953174" y = "-0.06597310669848902" />
+  <timeout value = "55.051000000011534" />
+  <velocity x = "0.9902159084235437" y = "0.12678858270742976" />
+  <score west = "0" east = "0" />
+<kick time="6260.0" kicker="6"/>
+<kick time="8440.0" kicker="12"/>
+<kick time="9624.0" kicker="7"/>
+
+</ball>
+
+    <westTeam name = "WestTeam" >
+<player robotid = "6" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="6" playerid="1">
+<position x = "0.12332417214642749" y = "-0.2345084971995215" />
+<heading x = "-1.3721990214284534" y = "1.2704211292287275" />
+<speed value = "1.0" />
+null<kick timestamp="6260"/>
+<kick timestamp="6261"/>
+<kick timestamp="6262"/>
+<kick timestamp="6263"/>
+<kick timestamp="6264"/>
+<kick timestamp="6265"/>
+<kick timestamp="6266"/>
+<kick timestamp="6267"/>
+<kick timestamp="6268"/>
+<kick timestamp="6269"/>
+<kick timestamp="6270"/>
+<kick timestamp="6271"/>
+<kick timestamp="6272"/>
+<kick timestamp="6273"/>
+<kick timestamp="6274"/>
+<kick timestamp="6275"/>
+<kick timestamp="6276"/>
+<kick timestamp="6277"/>
+<kick timestamp="6278"/>
+<kick timestamp="6280"/>
+<kick timestamp="6281"/>
+<kick timestamp="6282"/>
+<kick timestamp="6283"/>
+<kick timestamp="6284"/>
+<kick timestamp="6285"/>
+<kick timestamp="6286"/>
+<kick timestamp="6287"/>
+<kick timestamp="6288"/>
+<kick timestamp="6289"/>
+<kick timestamp="6290"/>
+<kick timestamp="6291"/>
+<kick timestamp="6292"/>
+<kick timestamp="6293"/>
+<kick timestamp="6294"/>
+<kick timestamp="6295"/>
+<kick timestamp="6296"/>
+<kick timestamp="6297"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="7" playerid="2">
+<position x = "0.12345294682994269" y = "-0.11137776871414101" />
+<heading x = "1.5938948988665134" y = "0.14106399741715472" />
+<speed value = "1.0" />
+null<kick timestamp="9624"/>
+<kick timestamp="9625"/>
+<kick timestamp="9626"/>
+<kick timestamp="9627"/>
+<kick timestamp="9628"/>
+<kick timestamp="9629"/>
+<kick timestamp="9630"/>
+<kick timestamp="9631"/>
+<kick timestamp="9632"/>
+<kick timestamp="9633"/>
+<kick timestamp="9634"/>
+<kick timestamp="9635"/>
+<kick timestamp="9636"/>
+<kick timestamp="9637"/>
+<kick timestamp="9638"/>
+<kick timestamp="9639"/>
+<kick timestamp="9640"/>
+<kick timestamp="9641"/>
+<kick timestamp="9642"/>
+<kick timestamp="9643"/>
+<kick timestamp="9644"/>
+<kick timestamp="9645"/>
+<kick timestamp="9646"/>
+<kick timestamp="9647"/>
+<kick timestamp="9648"/>
+<kick timestamp="9649"/>
+<kick timestamp="9650"/>
+<kick timestamp="9651"/>
+<kick timestamp="9652"/>
+<kick timestamp="9653"/>
+<kick timestamp="9654"/>
+<kick timestamp="9655"/>
+<kick timestamp="9656"/>
+<kick timestamp="9657"/>
+<kick timestamp="9658"/>
+<kick timestamp="9659"/>
+<kick timestamp="9660"/>
+<kick timestamp="9661"/>
+<kick timestamp="9662"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="8" playerid="3">
+<position x = "1.309892877390774" y = "-0.11985048161483075" />
+<heading x = "0.6602009858263077" y = "-1.369136464459979" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="9" playerid="4">
+<position x = "0.015168845611888446" y = "-0.18179506434804832" />
+<heading x = "1.5380098968909903" y = "0.44150374524500385" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="10" playerid="0">
+<position x = "-1.3099989375516914" y = "-0.11342531528225383" />
+<heading x = "-2.460054701064878" y = "-0.7436604519325974" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "EastTeam" >
+<player robotid = "11" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="11" playerid="1">
+<position x = "1.3099659156059085" y = "4.6619297691086106E-4" />
+<heading x = "0.6615358682962594" y = "-1.7668532182831471" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="12" playerid="2">
+<position x = "0.2436005434958193" y = "-0.09913631553802647" />
+<heading x = "1.3745331465504689" y = "0.8191816825552604" />
+<speed value = "1.0" />
+null<kick timestamp="8440"/>
+<kick timestamp="8441"/>
+<kick timestamp="8442"/>
+<kick timestamp="8443"/>
+<kick timestamp="8444"/>
+<kick timestamp="8445"/>
+<kick timestamp="8446"/>
+<kick timestamp="8447"/>
+<kick timestamp="8448"/>
+<kick timestamp="8449"/>
+<kick timestamp="8450"/>
+<kick timestamp="8451"/>
+<kick timestamp="8452"/>
+<kick timestamp="8453"/>
+<kick timestamp="8454"/>
+<kick timestamp="8455"/>
+<kick timestamp="8456"/>
+<kick timestamp="8457"/>
+<kick timestamp="8458"/>
+<kick timestamp="8459"/>
+<kick timestamp="8460"/>
+<kick timestamp="8461"/>
+<kick timestamp="8462"/>
+<kick timestamp="8463"/>
+<kick timestamp="8464"/>
+<kick timestamp="8465"/>
+<kick timestamp="8466"/>
+<kick timestamp="8467"/>
+<kick timestamp="8468"/>
+<kick timestamp="8469"/>
+<kick timestamp="8470"/>
+<kick timestamp="8471"/>
+<kick timestamp="8472"/>
+<kick timestamp="8473"/>
+<kick timestamp="8474"/>
+<kick timestamp="8475"/>
+<kick timestamp="8476"/>
+<kick timestamp="8477"/>
+<kick timestamp="8478"/>
+<kick timestamp="8479"/>
+<kick timestamp="8480"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="13" playerid="3">
+<position x = "0.7660465327926056" y = "-0.6109976488003659" />
+<heading x = "1.647152083338252" y = "0.9199402232506504" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="14" playerid="4">
+<position x = "-0.34014490386600155" y = "-0.052591579784874845" />
+<heading x = "-1.600124995117569" y = "1.959587953506405E-16" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="15" playerid="0">
+<position x = "1.3099989375516923" y = "-0.2398641554500461" />
+<heading x = "0.47375645954735707" y = "2.5259562183531914" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "20002" >
+
+<ball>
+  <position x = "0.029919891203695575" y = "0.7068670021978697" />
+  <timeout value = "59.87500000000029" />
+  <velocity x = "0.22749786180051565" y = "-0.2822250394210114" />
+  <score west = "0" east = "0" />
+<kick time="13080.0" kicker="9"/>
+<kick time="19152.0" kicker="6"/>
+<kick time="19854.0" kicker="12"/>
+
+</ball>
+
+    <westTeam name = "WestTeam" >
+<player robotid = "6" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="6" playerid="1">
+<position x = "-0.04276850179164119" y = "-0.535486993532038" />
+<heading x = "-0.7741562464179493" y = "1.702228570472271" />
+<speed value = "1.0" />
+<kick timestamp="19152"/>
+<kick timestamp="19153"/>
+<kick timestamp="19154"/>
+<kick timestamp="19155"/>
+<kick timestamp="19156"/>
+<kick timestamp="19157"/>
+<kick timestamp="19158"/>
+<kick timestamp="19159"/>
+<kick timestamp="19160"/>
+<kick timestamp="19161"/>
+<kick timestamp="19162"/>
+<kick timestamp="19163"/>
+<kick timestamp="19164"/>
+<kick timestamp="19165"/>
+<kick timestamp="19166"/>
+<kick timestamp="19167"/>
+<kick timestamp="19168"/>
+<kick timestamp="19169"/>
+<kick timestamp="19170"/>
+<kick timestamp="19171"/>
+<kick timestamp="19172"/>
+<kick timestamp="19173"/>
+<kick timestamp="19174"/>
+<kick timestamp="19175"/>
+<kick timestamp="19176"/>
+<kick timestamp="19177"/>
+<kick timestamp="19178"/>
+<kick timestamp="19179"/>
+<kick timestamp="19180"/>
+<kick timestamp="19181"/>
+<kick timestamp="19182"/>
+<kick timestamp="19183"/>
+<kick timestamp="19184"/>
+<kick timestamp="19185"/>
+<kick timestamp="19186"/>
+<kick timestamp="19187"/>
+<kick timestamp="19188"/>
+<kick timestamp="19189"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="7" playerid="2">
+<position x = "0.020114989944203937" y = "-0.40364540846594527" />
+<heading x = "-1.5997577427922758" y = "0.034280670590909036" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="8" playerid="3">
+<position x = "1.2791507192515306" y = "-0.12375963397303197" />
+<heading x = "0.3899287792547386" y = "-1.469134284913707" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="9" playerid="4">
+<position x = "0.06166426590991735" y = "-0.2909255623793436" />
+<heading x = "-1.5475027602127551" y = "-0.40698305509431704" />
+<speed value = "1.0" />
+null<kick timestamp="13080"/>
+<kick timestamp="13082"/>
+<kick timestamp="13084"/>
+<kick timestamp="13087"/>
+<kick timestamp="13090"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="10" playerid="0">
+<position x = "-1.3099989375516914" y = "-0.2118069579929076" />
+<heading x = "-1.8182374273010982" y = "1.8162909067551611" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "EastTeam" >
+<player robotid = "11" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="11" playerid="1">
+<position x = "1.3099999222766743" y = "-0.007669847683060185" />
+<heading x = "1.7258696073209312" y = "-0.7620853617055604" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="12" playerid="2">
+<position x = "0.17957837969836266" y = "-0.31476847705918" />
+<heading x = "-0.6071982150505775" y = "1.4804426120722791" />
+<speed value = "1.0" />
+<kick timestamp="19854"/>
+<kick timestamp="19855"/>
+<kick timestamp="19856"/>
+<kick timestamp="19857"/>
+<kick timestamp="19858"/>
+<kick timestamp="19859"/>
+<kick timestamp="19860"/>
+<kick timestamp="19861"/>
+<kick timestamp="19862"/>
+<kick timestamp="19863"/>
+<kick timestamp="19864"/>
+<kick timestamp="19865"/>
+<kick timestamp="19866"/>
+<kick timestamp="19867"/>
+<kick timestamp="19868"/>
+<kick timestamp="19869"/>
+<kick timestamp="19870"/>
+<kick timestamp="19871"/>
+<kick timestamp="19872"/>
+<kick timestamp="19873"/>
+<kick timestamp="19874"/>
+<kick timestamp="19875"/>
+<kick timestamp="19876"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="13" playerid="3">
+<position x = "1.2976810087290958" y = "-0.3740291204150982" />
+<heading x = "1.2850907457946832" y = "-1.3812826557489473" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="14" playerid="4">
+<position x = "-0.09733571777618791" y = "-0.42836383503522757" />
+<heading x = "-0.009578707692559116" y = "1.6000963247126532" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="15" playerid="0">
+<position x = "1.3099989375516923" y = "-0.23975112067774834" />
+<heading x = "1.817268229005098" y = "1.817260626285805" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "30003" >
+
+<ball>
+  <position x = "0.762732191839758" y = "-0.48385475764269453" />
+  <timeout value = "53.50700000001513" />
+  <velocity x = "0.3743412951229097" y = "0.12606980116486538" />
+  <score west = "0" east = "0" />
+<kick time="27614.0" kicker="6"/>
+
+</ball>
+
+    <westTeam name = "WestTeam" >
+<player robotid = "6" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="6" playerid="1">
+<position x = "-0.18941881291854676" y = "-0.48929410127826506" />
+<heading x = "-0.5122761134299975" y = "1.798464117965398" />
+<speed value = "1.0" />
+<kick timestamp="27615"/>
+<kick timestamp="27616"/>
+<kick timestamp="27617"/>
+<kick timestamp="27618"/>
+<kick timestamp="27619"/>
+<kick timestamp="27620"/>
+<kick timestamp="27621"/>
+<kick timestamp="27622"/>
+<kick timestamp="27623"/>
+<kick timestamp="27624"/>
+<kick timestamp="27625"/>
+<kick timestamp="27626"/>
+<kick timestamp="27627"/>
+<kick timestamp="27628"/>
+<kick timestamp="27629"/>
+<kick timestamp="27630"/>
+<kick timestamp="27631"/>
+<kick timestamp="27632"/>
+<kick timestamp="27633"/>
+<kick timestamp="27634"/>
+<kick timestamp="27635"/>
+<kick timestamp="27636"/>
+<kick timestamp="27637"/>
+<kick timestamp="27638"/>
+<kick timestamp="27639"/>
+<kick timestamp="27640"/>
+<kick timestamp="27641"/>
+<kick timestamp="27642"/>
+<kick timestamp="27643"/>
+<kick timestamp="27644"/>
+<kick timestamp="27645"/>
+<kick timestamp="27646"/>
+<kick timestamp="27647"/>
+<kick timestamp="27648"/>
+<kick timestamp="27649"/>
+<kick timestamp="27650"/>
+<kick timestamp="27651"/>
+<kick timestamp="27652"/>
+<kick timestamp="27653"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "t111208.SchalkeTemeto">
+<robot id="7" playerid="2">
+<position x = "-0.12126902515789911" y = "-0.39052287350852327"

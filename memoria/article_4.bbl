@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{bonabeau1997adaptive}
+Eric Bonabeau, Andrej Sobkowski, Guy Theraulaz, and Jean-Louis Deneubourg.
+\newblock Adaptive task allocation inspired by a model of division of labor in
+  social insects.
+\newblock In {\em BCEC}, pages 36--45, 1997.
+
+\bibitem{wu2004fuzzy}
+Chia-Ju Wu and Tsong-Li Lee.
+\newblock A fuzzy mechanism for action selection of soccer robots.
+\newblock {\em Journal of Intelligent and Robotic Systems}, 39(1):57--70, 2004.
+
+\bibitem{shi2015research}
+Haobin Shi, Lincheng Xu, Lin Zhang, Wei Pan, and Genjiu Xu.
+\newblock Research on self-adaptive decision-making mechanism for competition
+  strategies in robot soccer.
+\newblock {\em Frontiers of Computer Science}, 9(3):485--494, 2015.
+
+\bibitem{ros2009case}
+Raquel Ros, Josep~Llu{\'\i}s Arcos, Ramon~Lopez De~Mantaras, and Manuela
+  Veloso.
+\newblock A case-based approach for coordinated action selection in robot
+  soccer.
+\newblock {\em Artificial Intelligence}, 173(9):1014--1039, 2009.
+
+\bibitem{baghaei2007multi}
+Khashayar~R Baghaei and Arvin Agah.
+\newblock Multi-agent task allocation for robot soccer.
+\newblock {\em Journal of Intelligent Systems}, 16(3):207--240, 2007.
+
+\end{thebibliography}

@@ -1,0 +1,6642 @@
+<SoccerBotsLOG>
+<initlog>
+<westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.5" y = "0.0" />
+<heading x = "1.87" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.15" y = "0.5" />
+<heading x = "1.5199999999999998" y = "-0.5000000000000002" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.15" y = "0.0" />
+<heading x = "1.52" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.15" y = "-0.5" />
+<heading x = "1.52" y = "0.5000000000000001" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2" y = "0.0" />
+<heading x = "2.5700000000000003" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+</westTeam>
+
+<eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5" y = "0.25" />
+<heading x = "-1.87" y = "-0.2499999999999998" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.15" y = "0.5" />
+<heading x = "-1.5200000000000002" y = "-0.4999999999999997" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5" y = "-0.25" />
+<heading x = "-1.8699999999999999" y = "0.2500000000000003" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.15" y = "-0.5" />
+<heading x = "-1.52" y = "0.5000000000000001" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2" y = "0.0" />
+<heading x = "-2.5700000000000003" y = "3.147342273808698E-16" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+</eastTeam>
+
+</initlog>
+
+
+
+<log time = "560" >
+
+<ball>
+  <position x = "0.18631681661126206" y = "0.7404625571989764" />
+  <timeout value = "59.44000000000001" />
+  <velocity x = "0.3376403411815401" y = "0.4959828626140353" />
+  <score west = "0" east = "0" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.37435125945190734" y = "0.20239075401876228" />
+<heading x = "-1.5128617794811512" y = "1.0991584217869257" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.1499561280712878" y = "0.3736575904236773" />
+<heading x = "-0.8924079420833845" y = "-1.3281596533950648" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.007647593689858711" y = "0.28033807715920095" />
+<heading x = "0.7899851357130677" y = "1.298585186020696" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.06965692369344038" y = "-0.18675380797336555" />
+<heading x = "0.2550477351418144" y = "1.5796678931975008" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2" y = "0.0" />
+<heading x = "2.5700000000000003" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.4828582124929448" y = "0.1575142331940907" />
+<heading x = "1.8865877998491496" y = "0.013655528563376087" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.1490324881846881" y = "0.693453208620429" />
+<heading x = "1.5784494215715001" y = "0.26248318715795227" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5295338950605363" y = "-0.16069598562680779" />
+<heading x = "1.6466508904398602" y = "-0.9208370349924112" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.014081527903477869" y = "-0.38957440268338994" />
+<heading x = "-1.502956640653203" y = "0.5491095849795732" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2163500080687166" y = "0.10902257973501404" />
+<heading x = "2.4231946126752" y = "0.8561704673147099" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "1120" >
+
+<ball>
+  <position x = "0.03222257349811563" y = "0.6885942607441471" />
+  <timeout value = "58.880000000000024" />
+  <velocity x = "-0.3393281266748821" y = "-0.15201247933101084" />
+  <score west = "0" east = "0" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.6084288810249998" y = "0.010615560933547957" />
+<heading x = "-1.1438434418010626" y = "-1.4793654655455155" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.35380335514531414" y = "0.4970812784253894" />
+<heading x = "-1.2995203752790367" y = "0.9336202623307996" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.12364853146411123" y = "0.5594882204279663" />
+<heading x = "0.5098590957446965" y = "1.4319370455737224" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.03232697184739919" y = "0.1463861952993119" />
+<heading x = "-0.02909291718643032" y = "1.5998604945961956" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2" y = "0.0" />
+<heading x = "2.5700000000000003" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.511430266231941" y = "0.2863377402841893" />
+<heading x = "-1.6743243335608962" y = "0.8695044715502396" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.09240390566813764" y = "0.7001959507533837" />
+<heading x = "-1.565269469017991" y = "0.3321618421193753" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5457752221228471" y = "-0.3001566959481466" />
+<heading x = "-1.710332181143674" y = "-0.7963440400632898" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.1347047647213416" y = "-0.3119994128907316" />
+<heading x = "-1.4660810121431591" y = "0.6410978597946574" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2962260100862708" y = "0.13400116409171473" />
+<heading x = "-0.784174085052509" y = "2.4474417264425443" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "1680" >
+
+<ball>
+  <position x = "-0.42255679800101115" y = "0.5176211968598867" />
+  <timeout value = "58.320000000000036" />
+  <velocity x = "0.9527329231808709" y = "0.17124245118320636" />
+  <score west = "0" east = "0" />
+<kick time="1240.0" kicker="12"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.7236469511581447" y = "-0.26137340765070527" />
+<heading x = "0.6251452337342264" y = "-1.7624112564153067" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.5091707074979522" y = "0.48816849654096184" />
+<heading x = "-1.4445311956391065" y = "-0.6882801935443538" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.013706432114600778" y = "0.7018440412704302" />
+<heading x = "-1.5198427962326027" y = "-0.021860346288739296" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.021151552545070205" y = "0.4313302217630218" />
+<heading x = "-1.417837700294742" y = "0.741711706542992" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2" y = "0.0" />
+<heading x = "2.5700000000000003" y = "0.0" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.49599904003472467" y = "0.1935634753577401" />
+<heading x = "1.8768333397421981" y = "-0.19208491568092143" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.22347061815599895" y = "0.597272029045062" />
+<heading x = "-1.5024300442132745" y = "-0.550548782802485" />
+<speed value = "1.0" />
+null<kick timestamp="1240"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5343672265307687" y = "-0.20680229267136602" />
+<heading x = "1.8833804386167612" y = "0.11080669400237568" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.2917184023311515" y = "-0.2532946851296142" />
+<heading x = "-1.5368596450488985" y = "0.44549122485204345" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3072344167002075" y = "0.13361665385183052" />
+<heading x = "-0.171856765643726" y = "-2.564247502114895" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "2240" >
+
+<ball>
+  <position x = "-0.5172658089736304" y = "0.34132179948713465" />
+  <timeout value = "57.76000000000005" />
+  <velocity x = "0.16538661080098815" y = "-0.1739174199663807" />
+  <score west = "0" east = "0" />
+<kick time="1800.0" kicker="12"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.9131619401798112" y = "-0.26638834671981765" />
+<heading x = "-0.04811416165028329" y = "1.8693809209063545" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.6281052175204426" y = "0.37903210980969587" />
+<heading x = "-0.4943731152791636" y = "-1.5218394208618644" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.2583358873361723" y = "0.698139309708729" />
+<heading x = "-0.7849100686120515" y = "1.3016590122575977" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.1712911827101154" y = "0.6142263225634634" />
+<heading x = "0.7517765648082974" y = "1.4125268127030495" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1244858126625281" y = "0.17255077005527264" />
+<heading x = "-0.29741345436052335" y = "2.552732895773732" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.49471550647954166" y = "0.28702157973991604" />
+<heading x = "-1.883825770355783" y = "-0.10295856906270921" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.47636223608330514" y = "0.38763455118998" />
+<heading x = "-0.5652821481988571" y = "-1.496948927962369" />
+<speed value = "1.0" />
+<kick timestamp="1800"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5412868889074615" y = "-0.3085614172728361" />
+<heading x = "-1.8771004742965758" y = "-0.18945661613036976" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.4561838726626806" y = "-0.22068425698011507" />
+<heading x = "-1.5941630797353326" y = "0.1380002724952373" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3065846184250332" y = "0.06293717674796123" />
+<heading x = "-2.513093557365376" y = "-0.5378296867305122" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "2800" >
+
+<ball>
+  <position x = "-0.7071769326285351" y = "0.13134183820115208" />
+  <timeout value = "57.20000000000006" />
+  <velocity x = "-0.4979983118456731" y = "-0.28943683490333366" />
+  <score west = "0" east = "0" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.9420890067874425" y = "0.0664758527027582" />
+<heading x = "0.38744599505024935" y = "1.8294222041178803" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.8175266003926235" y = "0.31988373018766353" />
+<heading x = "-1.0922417687865795" y = "1.1693621844911712" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.38667694994761204" y = "0.5156061733761901" />
+<heading x = "0.9119582189221853" y = "-1.2160313346868474" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.11463273184025077" y = "0.6819356251755296" />
+<heading x = "1.376848887439448" y = "-0.8152834728833612" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3075435855513333" y = "0.2598152042127692" />
+<heading x = "-0.9992090677172838" y = "-2.3678009289193964" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.4708721444847213" y = "0.2842989026955235" />
+<heading x = "-1.8727716492566333" y = "-0.22831195706881072" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.6578656904641147" y = "0.16834627481972425" />
+<heading x = "-1.4742224372750359" y = "-0.6221480574870043" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.4875147657053324" y = "-0.285537323737286" />
+<heading x = "-1.772243784139142" y = "0.6469559255313877" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.6224101417262712" y = "-0.23888520185986312" />
+<heading x = "-1.5739904433233003" y = "-0.288017506979906" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2991066834755733" y = "-0.03232559928477286" />
+<heading x = "2.4790498282440856" y = "-0.6776517904373676" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "3360" >
+
+<ball>
+  <position x = "-1.2143455503693887" y = "-0.13385653204050685" />
+  <timeout value = "56.64000000000007" />
+  <velocity x = "-0.8259036059101124" y = "-0.4318648327250944" />
+  <score west = "0" east = "0" />
+<kick time="2800.0" kicker="12"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.9936257522221335" y = "0.2806920553518363" />
+<heading x = "-1.8202771819600903" y = "-0.42835847235164215" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.050923908605506" y = "0.4207828693946994" />
+<heading x = "-1.5972729075301568" y = "-0.09549481069753815" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.18508618576481325" y = "0.2467992467612026" />
+<heading x = "0.9119582189221863" y = "-1.2160313346868465" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.03325347005881628" y = "0.464790605988963" />
+<heading x = "-1.4693545194458097" y = "-0.6335592286315256" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2045715475189775" y = "-0.028071873575582343" />
+<heading x = "-1.3398710808202317" y = "-2.1930903963999353" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.3629261222978937" y = "0.28698750242058874" />
+<heading x = "-1.8866325942620754" y = "0.004177830531676564" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.9351128694996911" y = "-0.016175853352688542" />
+<heading x = "-1.3705071869789935" y = "-0.8258995401614689" />
+<speed value = "1.0" />
+<kick timestamp="2800"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.37966696001769135" y = "-0.28022825211644165" />
+<heading x = "-1.8819232906244057" y = "0.13328438845344495" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.784161457853946" y = "-0.28387609958142185" />
+<heading x = "-1.5495616846803049" y = "-0.3990721555943674" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3097107338533587" y = "-0.005981676375156635" />
+<heading x = "-2.5674798776912473" y = "-0.11378522597656711" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<goal time="3560.0" team="EAST" goaler="12">
+<ball>
+  <position x = "-1.3752726907484407" y = "-0.21800530202213472" />
+  <timeout value = "56.440000000000076" />
+  <velocity x = "-0.7727338458729806" y = "-0.40406237568270637" />
+  <score west = "0" east = "1" />
+</ball>
+<westTeam>
+<robot id="6" playerid="1">
+<position x = "-1.058312946650539" y = "0.21289826475173537" />
+<heading x = "-0.9611979664952948" y = "-1.6040568784196247" />
+<speed value = "1.0" />
+</robot>
+<robot id="7" playerid="2">
+<position x = "-1.133072611843164" y = "0.4663333118205374" />
+<heading x = "-1.230729391356639" y = "1.022597264445254" />
+<speed value = "1.0" />
+</robot>
+<robot id="8" playerid="3">
+<position x = "-0.12748882456972785" y = "0.16999726772834914" />
+<heading x = "0.9119582189221863" y = "-1.2160313346868465" />
+<speed value = "1.0" />
+</robot>
+<robot id="9" playerid="4">
+<position x = "-0.12120871908277761" y = "0.4263220577866362" />
+<heading x = "-1.4641649378273773" y = "-0.6454618771367927" />
+<speed value = "1.0" />
+</robot>
+<robot id="10" playerid="0">
+<position x = "-1.2850600577433515" y = "-0.07912514327945891" />
+<heading x = "-2.2854766305868717" y = "-1.1753708227794666" />
+<speed value = "1.0" />
+</robot>
+</westTeam>
+<eastTeam>
+<robot id="11" playerid="1">
+<position x = "0.31492629467583244" y = "0.28688039285386124" />
+<heading x = "-1.8866215037205722" y = "-0.007700759646085396" />
+<speed value = "0.5" />
+</robot>
+<robot id="12" playerid="2">
+<position x = "-1.0146498892279063" y = "-0.06992881715428169" />
+<heading x = "-1.3317588112512326" y = "-0.8870278849363779" />
+<speed value = "1.0" />
+</robot>
+<robot id="13" playerid="3">
+<position x = "0.3317913738901123" y = "-0.2767745422789464" />
+<heading x = "-1.8817830306856356" y = "0.13525023261933694" />
+<speed value = "0.5" />
+</robot>
+<robot id="14" playerid="4">
+<position x = "-0.8310906004619777" y = "-0.29391618371029266" />
+<heading x = "-1.5732167891558708" y = "-0.2922138503187218" />
+<speed value = "0.5" />
+</robot>
+<robot id="15" playerid="0">
+<position x = "1.3097107338533587" y = "-0.005981676375156635" />
+<heading x = "-2.5640294069749108" y = "-0.17508055336869696" />
+<speed value = "0.0" />
+</robot>
+</eastTeam>
+</goal>
+<log time = "3920" >
+
+<ball>
+  <position x = "6.305497917155302E-4" y = "-0.46512452620729516" />
+  <timeout value = "59.64000000000001" />
+  <velocity x = "-0.5639279201951227" y = "0.2049031498645233" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.4464582036421361" y = "-0.16478470520138871" />
+<heading x = "-1.1919828608300547" y = "-1.4408597639907221" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.04764806901687413" y = "0.6398027369172758" />
+<heading x = "-0.5836278430301132" y = "1.4898921238935448" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.04349702410271525" y = "-0.16841893704535532" />
+<heading x = "0.1720482380848369" y = "-1.5102315728959925" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.037804257167115975" y = "-0.5214147482055151" />
+<heading x = "0.20632402719403994" y = "-1.5867672784004694" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1220091982302305" y = "-0.17278623900591" />
+<heading x = "-0.20053637275813252" y = "-2.5621641561775492" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.4843830646763285" y = "0.16478678454910792" />
+<heading x = "1.3846111715239993" y = "-1.2815037665535511" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.06680991688748461" y = "0.43180587595554165" />
+<heading x = "-1.322634082607104" y = "-0.9005770836114276" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.4843830646763284" y = "-0.16478678454910783" />
+<heading x = "1.3846111715239966" y = "1.281503766553554" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.07942385244058767" y = "-0.4890131492953015" />
+<heading x = "-1.5997119680096779" y = "-0.036354083767890503" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.173229101821068" y = "-0.08239235260069433" />
+<heading x = "1.638179653654135" y = "-1.9802190339337766" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "4480" >
+
+<ball>
+  <position x = "-0.27411513292734824" y = "-0.36529571159329943" />
+  <timeout value = "59.08000000000002" />
+  <velocity x = "-0.4060281025404882" y = "0.1475302679024567" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.7035814841242096" y = "-0.32579004012108553" />
+<heading x = "0.031108280993026146" y = "-1.8697412320569013" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.28011343075682543" y = "0.6923848989649876" />
+<heading x = "-1.0846449170601125" y = "1.1764120893189012" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.15604436145598521" y = "-0.30634253507900316" />
+<heading x = "-1.217804238733425" y = "0.9095893777539967" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.1270226715425989" y = "-0.6988326081139079" />
+<heading x = "-1.2291979822078059" y = "-1.0244375630248326" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.217847462803012" y = "-0.47163787302336313" />
+<heading x = "-2.4243270434450936" y = "-0.852958607683147" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5864426003957679" y = "0.2592751945942845" />
+<heading x = "-0.1504974653883874" y = "1.880625032512242" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.07706463367509139" y = "0.3455348974941788" />
+<heading x = "-1.4476130359740929" y = "-0.6817745214349608" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5809246321397293" y = "-0.261146487969669" />
+<heading x = "-0.3110873333521694" y = "-1.860812905970892" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.1771605001504846" y = "-0.4606429538418395" />
+<heading x = "-1.5988527875706204" y = "-0.06379469944796456" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.297501882940358" y = "-0.06734699035003831" />
+<heading x = "1.017314830380888" y = "2.3600785020602824" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "5040" >
+
+<ball>
+  <position x = "-0.5900800595826493" y = "-0.2510904339603085" />
+  <timeout value = "58.52000000000003" />
+  <velocity x = "-0.9868988502292222" y = "0.3643276813752138" />
+  <score west = "0" east = "1" />
+<kick time="4880.0" kicker="14"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.8877355645008148" y = "-0.3641048228950692" />
+<heading x = "-0.2652036974480011" y = "1.8510988625300135" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.43035336736168717" y = "0.6585511789901922" />
+<heading x = "-1.3009312292836317" y = "-0.931653335031104" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.4357113545871544" y = "-0.14673843572526205" />
+<heading x = "-1.5192509165306387" y = "-0.04771428109920646" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.2574453326010276" y = "-0.6988326081139079" />
+<heading x = "-0.5836278430301175" y = "-1.489892123893543" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.198976504406286" y = "-0.2775671235694099" />
+<heading x = "2.5113111238983072" y = "0.5460919693463943" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5164378120665254" y = "0.2539466096643436" />
+<heading x = "0.028481102330786105" y = "-1.886422229197383" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.23479795133603912" y = "0.2887572441733391" />
+<heading x = "-1.5423201435148042" y = "-0.4262025045778986" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.4645050518727677" y = "-0.2938795304413788" />
+<heading x = "-1.8859167305565203" y = "0.05213526068799435" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.46056517642320727" y = "-0.29713129479285816" />
+<heading x = "-1.5006925585345268" y = "0.5552673633116714" />
+<speed value = "1.0" />
+null<kick timestamp="4880"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.255234731499315" y = "-0.03019017766936409" />
+<heading x = "-1.4475756406188682" y = "2.123540619975722" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "5600" >
+
+<ball>
+  <position x = "-0.7876385808292042" y = "-0.0886971253789613" />
+  <timeout value = "57.96000000000004" />
+  <velocity x = "0.4869427254789391" y = "0.2334240392571906" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.9029065158654598" y = "-0.07236456828042419" />
+<heading x = "0.7686416004829485" y = "1.7047258107997931" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.5630945403306523" y = "0.5597071448248867" />
+<heading x = "-1.24910554592438" y = "-1.0000676652811828" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.4767399647662411" y = "0.0368300829405026" />
+<heading x = "1.5012909841381814" y = "0.2377506697054932" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.4738259916687401" y = "-0.5482581249511439" />
+<heading x = "0.3922927656170701" y = "1.5512918442525605" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.138869080257794" y = "-0.0687662195217604" />
+<heading x = "-1.9842776268084719" y = "1.6332612466312122" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.6609595510499318" y = "0.22943683384721136" />
+<heading x = "1.8499541764903362" y = "0.3702290438174205" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.39775776767370785" y = "0.24806389886297403" />
+<heading x = "-1.5761579140732662" y = "-0.2759098220509919" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.45252720101083516" y = "-0.29460828878905093" />
+<heading x = "-1.883154937673528" y = "-0.11457521859377612" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.7480901195091082" y = "-0.15478013536557977" />
+<heading x = "-0.6522050773422301" y = "1.461173684778444" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3082349678579248" y = "0.007884292931008995" />
+<heading x = "0.5641943513557341" y = "-2.507306270462044" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "6160" >
+
+<ball>
+  <position x = "-0.7609151818502379" y = "0.2142487780103019" />
+  <timeout value = "57.400000000000055" />
+  <velocity x = "0.09851214242424805" y = "0.5065089908333164" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.0996723819745802" y = "0.06059815130309607" />
+<heading x = "-1.0274888421080246" y = "1.5624233355091415" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.6769113823592442" y = "0.4410208497828232" />
+<heading x = "-0.7609985049334558" y = "-1.4075799357368821" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.1417381540209882" y = "0.0109498434245728" />
+<heading x = "1.5154843819428099" y = "-0.11707727400063483" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.1926530769640092" y = "-0.3887383422668225" />
+<heading x = "1.0060124365570497" y = "1.2443226982951598" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.192279872459982" y = "0.1371327998508956" />
+<heading x = "1.5054445555663312" y = "2.082915430380142" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.6149093217513512" y = "0.3114402688736833" />
+<heading x = "-1.583753492125316" y = "-1.025243813041984" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.6090246641460141" y = "0.2241145422543291" />
+<heading x = "-1.5308131913561804" y = "-0.46584436582393696" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.287734776671517" y = "-0.264384697037111" />
+<heading x = "-1.8532324420848791" y = "0.353453696548947" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.8284209942913132" y = "0.11166957332607942" />
+<heading x = "-1.2754574571762778" y = "0.9662340683982445" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3082349678579248" y = "0.007884292931008995" />
+<heading x = "-2.55975914045769" y = "0.22920109695049434" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "6720" >
+
+<ball>
+  <position x = "-0.8892481228582804" y = "0.35901005990264556" />
+  <timeout value = "56.84000000000007" />
+  <velocity x = "0.311430816158201" y = "0.5128458313636145" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.029344262437758" y = "0.14847601473024993" />
+<heading x = "1.215210354527647" y = "-1.4213246618027815" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.799576792606555" y = "0.42306066724776403" />
+<heading x = "-0.6240783648564059" y = "1.4734063236317925" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.08173761407737262" y = "0.14041372798402468" />
+<heading x = "-0.5393271817767924" y = "1.4211003451539594" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.2113497281314497" y = "-0.07616813548855508" />
+<heading x = "1.0060124365570495" y = "1.2443226982951603" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1156224600293851" y = "0.4527567752262004" />
+<heading x = "-0.7763068729172212" y = "2.4499484972263166" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.6640612271004759" y = "0.18536655963261153" />
+<heading x = "1.4620987358630895" y = "-1.1923369014618124" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.9237457783773012" y = "0.3099192077640753" />
+<heading x = "-1.3152343923553425" y = "0.9113498193151041" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.12840647480272455" y = "-0.21328967000542912" />
+<heading x = "-1.781665350267725" y = "0.6205389428999479" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.9102233153058173" y = "0.11132696567104682" />
+<heading x = "-0.28430757437862175" y = "1.5746647907256148" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.300133246353535" y = "0.09950723691147302" />
+<heading x = "2.5051813314585503" y = "-0.573556009916701" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "7280" >
+
+<ball>
+  <position x = "-1.009333537322021" y = "0.3391144548929023" />
+  <timeout value = "56.28000000000008" />
+  <velocity x = "-0.5519551552374968" y = "0.0070360931453902565" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.2185352306264747" y = "0.12144933180206123" />
+<heading x = "-0.60664950770188" y = "1.768863017535577" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.8845911305642071" y = "0.5584071722991539" />
+<heading x = "-1.256702949848837" y = "0.9905037586204464" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.06489017754767366" y = "0.022595908357566735" />
+<heading x = "1.0245956606962845" y = "-1.1227661074695585" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.09948803841364781" y = "-9.642866655920276E-5" />
+<heading x = "1.3455737710974716" y = "0.8659279568962588" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.268599871931769" y = "0.34330971338341276" />
+<heading x = "1.6236780709138106" y = "-1.9921268840195918" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.6864134161285732" y = "0.0664567568984159" />
+<heading x = "-1.8200932115705484" y = "-0.4966494751782256" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.0469553385435277" y = "0.40590883402939343" />
+<heading x = "-1.0698909849015465" y = "-1.1898459061686932" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.0353446647927944" y = "-0.1779384208395738" />
+<heading x = "-1.8543357154719011" y = "0.3476191224966094" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.926476057552629" y = "0.39330848626387255" />
+<heading x = "-1.513242179871873" y = "0.5200943232305288" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3090935315849646" y = "0.05279880570747848" />
+<heading x = "-2.550284564300091" y = "0.31772415881184524" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "7840" >
+
+<ball>
+  <position x = "-1.0435131149204697" y = "0.18724947765674638" />
+  <timeout value = "55.72000000000009" />
+  <velocity x = "-0.33195204875388556" y = "-0.44103496157118643" />
+  <score west = "0" east = "1" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.206451876335657" y = "0.19089797072129042" />
+<heading x = "1.2260392995740972" y = "1.4119942053350847" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.0449465411771985" y = "0.5618570182000867" />
+<heading x = "-1.5831528452402341" y = "0.23243723584604808" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.04600772380283583" y = "-0.18297886807652747" />
+<heading x = "-1.2948689147377341" y = "-0.7960618654639366" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.059799780557380666" y = "0.29883263937482923" />
+<heading x = "-1.3564324878927885" y = "0.8488173571440326" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1794172066120674" y = "0.3197161112645081" />
+<heading x = "0.5278587641758233" y = "2.515206775810445" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5855871766862988" y = "-0.013515234054950115" />
+<heading x = "0.926191429290353" y = "-1.6436451673974808" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.0877443047976463" y = "0.4059298161695492" />
+<heading x = "-0.5422236349147304" y = "1.5054545923872487" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.20050138273957577" y = "-0.14735818765254177" />
+<heading x = "-1.847929226931716" y = "0.3802072753795626" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.9892887416058205" y = "0.2254486385893391" />
+<heading x = "-1.1483191742586325" y = "-1.114344234978569" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2668688691487662" y = "-0.01613724417348736" />
+<heading x = "0.8329653444208316" y = "-2.4312689557089087" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<goal time="8320.0" team="EAST" goaler="14">
+<ball>
+  <position x = "-1.3878493608584554" y = "-0.17019435308220357" />
+  <timeout value = "55.2400000000001" />
+  <velocity x = "-0.6632524401932507" y = "-0.6884999641087124" />
+  <score west = "0" east = "2" />
+<kick time="7840.0" kicker="14"/>
+
+</ball>
+<westTeam>
+<robot id="6" playerid="1">
+<position x = "-1.0617863331961823" y = "0.18496607300752108" />
+<heading x = "1.271590687706933" y = "-1.371115284334986" />
+<speed value = "1.0" />
+</robot>
+<robot id="7" playerid="2">
+<position x = "-1.2362509212529158" y = "0.5989929890245566" />
+<heading x = "-1.4756103974371082" y = "0.6188488951072789" />
+<speed value = "1.0" />
+</robot>
+<robot id="8" playerid="3">
+<position x = "-0.06237077405593597" y = "-0.02924257080016259" />
+<heading x = "0.9108887510975412" y = "1.2168326438438286" />
+<speed value = "1.0" />
+</robot>
+<robot id="9" playerid="4">
+<position x = "-0.17648665501249314" y = "0.3331055876093668" />
+<heading x = "-1.5257463639434852" y = "-0.48218049827137704" />
+<speed value = "1.0" />
+</robot>
+<robot id="10" playerid="0">
+<position x = "-1.2344293218091593" y = "0.4631094443491819" />
+<heading x = "-2.2332465181877863" y = "1.2718136612735889" />
+<speed value = "1.0" />
+</robot>
+</westTeam>
+<eastTeam>
+<robot id="11" playerid="1">
+<position x = "0.7028761885350759" y = "0.0014558771104759283" />
+<heading x = "1.3494404116177734" y = "1.3184879883764034" />
+<speed value = "0.5" />
+</robot>
+<robot id="12" playerid="2">
+<position x = "-1.0061998190747488" y = "0.43227893158508285" />
+<heading x = "1.0583415842462212" y = "-1.2001304475161019" />
+<speed value = "0.5" />
+</robot>
+<robot id="13" playerid="3">
+<position x = "-0.32978611341267483" y = "-0.12113273337069488" />
+<heading x = "-1.8717527809349632" y = "0.23651961242618172" />
+<speed value = "0.5" />
+</robot>
+<robot id="14" playerid="4">
+<position x = "-1.1558627899929457" y = "0.02457043731384752" />
+<heading x = "-1.0579180533101198" y = "-1.2005038077742722" />
+<speed value = "1.0" />
+<kick timestamp="7840"/>
+
+</robot>
+<robot id="15" playerid="0">
+<position x = "1.3046117697499795" y = "-0.014758753627651364" />
+<heading x = "0.12053820597418362" y = "2.5671717007049852" />
+<speed value = "0.0" />
+</robot>
+</eastTeam>
+</goal>
+<log time = "8400" >
+
+<ball>
+  <position x = "1.644081023398374E-4" y = "0.43748972741409986" />
+  <timeout value = "59.92" />
+  <velocity x = "0.0019612134035459873" y = "0.3759948851274253" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.4557226438118601" y = "0.017530645470397684" />
+<heading x = "1.638693491682025" y = "0.9008793705702077" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.10246189868086995" y = "0.502817219301423" />
+<heading x = "1.5728629907175302" y = "0.2941122446126752" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.10572264381186013" y = "0.017530645470397684" />
+<heading x = "1.3319861536666726" y = "0.7322655846346073" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.11341769621161825" y = "-0.46951159480794813" />
+<heading x = "1.091109316615815" y = "1.1704189246565389" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.15572264381186" y = "0.017530645470397684" />
+<heading x = "2.2521081677127297" y = "1.2381069424414086" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.47921805160215086" y = "0.2383783576378301" />
+<heading x = "-1.5182550731565965" y = "-1.1199560405811728" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.10911345719350923" y = "0.4748694738220359" />
+<heading x = "-1.37808100152567" y = "-0.8131990858541384" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.47921805160215086" y = "-0.2383783576378301" />
+<heading x = "-1.518255073156596" y = "1.1199560405811733" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.1317088481058091" y = "-0.4847557974039741" />
+<heading x = "-1.091109316615815" y = "1.1704189246565389" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.17786132190593" y = "0.00876532273519884" />
+<heading x = "-2.2521081677127297" y = "1.2381069424414082" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "8960" >
+
+<ball>
+  <position x = "-0.4037821296987445" y = "0.464815554769089" />
+  <timeout value = "59.360000000000014" />
+  <velocity x = "-1.0038705271615045" y = "-0.01612342074385092" />
+  <score west = "0" east = "2" />
+<kick time="8640.0" kicker="12"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.5154783430182724" y = "0.21304784243729166" />
+<heading x = "-1.8626382408436981" y = "0.16576725776429466" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.15658628908155547" y = "0.6965508418493496" />
+<heading x = "-1.1188233235645018" y = "1.1439555807146018" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.09125569177963833" y = "0.30702685808224855" />
+<heading x = "-1.2386025975872534" y = "0.8810582303401452" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.03852843398640037" y = "-0.3177578348873641" />
+<heading x = "-0.7594028925193095" y = "1.4084414247079309" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1350582327944143" y = "0.34027844671075236" />
+<heading x = "-0.20345238558496753" y = "2.561934254972166" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5557033017427568" y = "0.18364999674951596" />
+<heading x = "0.9993545501360978" y = "1.6002157614279013" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.19803337177253336" y = "0.48363657156754836" />
+<heading x = "-1.6000691857404323" y = "-0.013364162672982757" />
+<speed value = "1.0" />
+<kick timestamp="8640"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.556192853485386" y = "-0.18332737941254848" />
+<heading x = "1.0763217617006549" y = "-1.549493938448808" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.1137008132857733" y = "-0.34122629075534344" />
+<heading x = "0.408205809513778" y = "1.5471806672393504" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2521593757951972" y = "0.0827913627490587" />
+<heading x = "2.437869508684402" y = "-0.8134446868883423" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "9520" >
+
+<ball>
+  <position x = "-0.9222752577514034" y = "0.45648790430999414" />
+  <timeout value = "58.800000000000026" />
+  <velocity x = "-0.8358921919392605" y = "-0.013425477830537217" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.8511429470066716" y = "0.22535583487662836" />
+<heading x = "-1.8699868801118467" y = "0.007004870417222366" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.349409771491522" y = "0.7008226706496709" />
+<heading x = "-1.3750806587909528" y = "0.8182622940225461" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.20213377574848107" y = "0.13824886625917152" />
+<heading x = "1.2546208789849986" y = "-0.8580946626188216" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.26904158950984625" y = "-0.07727345847461865" />
+<heading x = "-1.3086016287050553" y = "0.9208484008513435" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3005784970392609" y = "0.5357329960536809" />
+<heading x = "-2.1880411878107484" y = "-1.3481007975829298" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.490333617656563" y = "0.2999990743857686" />
+<heading x = "-1.84874803709067" y = "0.37620565566375397" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.5340124433862485" y = "0.4799052548566329" />
+<heading x = "-1.600063567685672" y = "-0.014020676338857138" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.6082843603337373" y = "-0.26806329370937165" />
+<heading x = "-1.8730550745208328" y = "-0.22597497164898186" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.019614379899121064" y = "-0.28244428003436295" />
+<heading x = "-1.552661268015217" y = "0.386837157994651" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2971220227132516" y = "0.06601927324463874" />
+<heading x = "-2.497033906549929" y = "-0.6080474237590376" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "10080" >
+
+<ball>
+  <position x = "-1.346700518079606" y = "0.44967110188235493" />
+  <timeout value = "58.24000000000004" />
+  <velocity x = "-0.6679138567170165" y = "-0.010727534917223516" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.0141204325324824" y = "0.4452558014307828" />
+<heading x = "-1.8104201584856567" y = "0.4682721962158013" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.49031972508496907" y = "0.6287928458065982" />
+<heading x = "-0.7864460608959717" y = "-1.3935216515365698" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.0859332060766919" y = "-0.01763079692627519" />
+<heading x = "1.5019854779965076" y = "0.2333230033400101" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.56943109905721" y = "0.06985395825912935" />
+<heading x = "-1.4875852997544468" y = "0.5894828037818174" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.143116511415994" y = "0.394691401403655" />
+<heading x = "1.538120243497352" y = "2.058904105718294" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.490333617656563" y = "0.2999990743857686" />
+<heading x = "-1.8801813013765545" y = "0.155943175400421" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.8637765155088484" y = "0.5195322522286477" />
+<heading x = "-1.4744373157076522" y = "0.621638642660519" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.6264243185421793" y = "-0.17578041940005779" />
+<heading x = "1.824709500419351" y = "-0.47941134642326044" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.17973725874978447" y = "-0.23164539180673432" />
+<heading x = "-1.5239835123189538" y = "0.48772354277806285" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3017061267468784" y = "-0.014010936162848476" />
+<heading x = "2.097846224893434" y = "1.4845676868032556" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "10640" >
+
+<ball>
+  <position x = "-1.2504914621061363" y = "0.2831796271621872" />
+  <timeout value = "57.68000000000005" />
+  <velocity x = "-0.5726511319907266" y = "-0.1334716487863222" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1889199985854502" y = "0.28588915840584234" />
+<heading x = "-1.651326960478667" y = "-0.8775074185420244" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.5863444728656083" y = "0.4945967117875262" />
+<heading x = "-0.9523117452851162" y = "-1.2858858191114855" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.0010364932934762566" y = "0.150218230646049" />
+<heading x = "-1.3106188533511924" y = "-0.7698559743487128" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.8353649757921664" y = "0.25512296786928207" />
+<heading x = "-1.542221235380126" y = "0.4265602667180784" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3064258876064574" y = "0.4314216268376923" />
+<heading x = "-0.6721748819343566" y = "-2.4805404508083586" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.3718954899156526" y = "0.2864601645576606" />
+<heading x = "-1.8416699644918586" y = "-0.40945297884928866" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.1591821619336093" y = "0.5356967117308685" />
+<heading x = "-0.8157563975104537" y = "-1.3765687414440175" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.6506075036906195" y = "-0.28735099596422914" />
+<heading x = "-1.833142422507388" y = "-0.4460816727951783" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.341898970978727" y = "-0.18812952497961105" />
+<heading x = "-1.560517518406219" y = "0.35381502900144834" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.308865792838677" y = "0.029675793357541176" />
+<heading x = "-2.556705637000857" y = "0.2610675884288267" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "11200" >
+
+<ball>
+  <position x = "-1.2989966925761338" y = "0.12174713509370078" />
+  <timeout value = "57.12000000000006" />
+  <velocity x = "-0.004136951843756399" y = "-0.4199796252551334" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.3047655461683807" y = "0.22777553480653284" />
+<heading x = "-1.0243264234698533" y = "-1.564498443010238" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.6063213259705015" y = "0.34478596850554577" />
+<heading x = "0.326206560311282" y = "-1.5665213946862908" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.02772268808279052" y = "-0.14132650960650792" />
+<heading x = "-0.7776231120114568" y = "-1.3060253809423525" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.0478281335017405" y = "0.279565147849719" />
+<heading x = "-1.5589631827341122" y = "-0.36060198956679" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "0.46439201175795203" />
+<heading x = "-2.5178518809054693" y = "0.5150940747288713" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.20519243081696836" y = "0.26746256040812616" />
+<heading x = "-1.8846171825433011" y = "-0.08728158604510836" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.1823584192256913" y = "0.2733092824207582" />
+<heading x = "-0.9701064531538177" y = "-1.272514624493298" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.4849555956656933" y = "-0.2607025303916425" />
+<heading x = "-1.8720873910900369" y = "0.2338563664339704" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.5075801860482999" y = "-0.16082917368471505" />
+<heading x = "-1.5880754459430815" y = "0.19600096426467625" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.308865792838677" y = "0.029675793357541176" />
+<heading x = "-2.567743373323133" y = "0.10767529315092651" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "11760" >
+
+<ball>
+  <position x = "-1.2656220619983076" y = "-0.14316175862725983" />
+  <timeout value = "56.56000000000007" />
+  <velocity x = "0.12087479210112559" y = "-0.5139779028659788" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.214188439260363" y = "-0.04219249789528583" />
+<heading x = "1.85173749369301" y = "-0.26070721979172373" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.6777750315083882" y = "0.16830683391260748" />
+<heading x = "-1.5632464782285875" y = "-0.3415559226626265" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.096249194081895" y = "1.362781891381202E-4" />
+<heading x = "1.203795693585737" y = "0.9280495289069621" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.2039535243895998" y = "0.1765541797168207" />
+<heading x = "-0.7840966069181852" y = "-1.3948449774148342" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "0.2436215424835364" />
+<heading x = "-2.0958576330399428" y = "-1.4873737869238557" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.03890464604907357" y = "0.24817679470904658" />
+<heading x = "-1.834690467207606" y = "-0.43967134263849417" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.3054562799239908" y = "0.05349567158857597" />
+<heading x = "-0.6827949760678744" y = "-1.4471319983527662" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.47703698961749536" y = "-0.16386318779921097" />
+<heading x = "1.8862241806959392" y = "0.03947581738144368" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.6749411292589237" y = "-0.14685729357465532" />
+<heading x = "-1.5990431777664496" y = "0.058829547325934685" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3002549472423888" y = "-0.06582487830916298" />
+<heading x = "2.539380809274083" y = "-0.39553142162223276" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "12320" >
+
+<ball>
+  <position x = "-1.2079318203136795" y = "-0.38846939408602243" />
+  <timeout value = "56.000000000000085" />
+  <velocity x = "0.08241463097804014" y = "-0.3504394792268036" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.176321017705698" y = "0.1420540930722865" />
+<heading x = "-1.8176747083408995" y = "-0.43927059389154066" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.9320694091869315" y = "0.37494785597587593" />
+<heading x = "-1.1422867497461118" y = "1.1205270997858392" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.033058978612661355" y = "-0.17702958919880527" />
+<heading x = "-1.4608987474076596" y = "-0.4197318784923675" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.2904054503427786" y = "-0.09213763895943829" />
+<heading x = "-0.057801339830011775" y = "-1.5990806749860544" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "0.10544572109570363" />
+<heading x = "-2.0958576330399428" y = "-1.4873737869238557" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-0.12211197605943123" y = "0.20097412854247865" />
+<heading x = "-1.8310344775649579" y = "-0.4546567298175862" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.216383046439589" y = "-0.2478975788750723" />
+<heading x = "0.5775664739438229" y = "-1.492252313845115" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5363766411307621" y = "-0.06512014631740684" />
+<heading x = "-1.5837743438345062" y = "1.0252116014811672" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.8421834377570673" y = "-0.15801120201174446" />
+<heading x = "-1.5728040723099193" y = "-0.2944271558897621" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3081676001838067" y = "-0.03407315483138563" />
+<heading x = "-2.5469259291283133" y = "-0.3436106976417933" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "12880" >
+
+<ball>
+  <position x = "-1.2455976569679386" y = "-0.6052257355570757" />
+  <timeout value = "55.4400000000001" />
+  <velocity x = "-0.2735518068444761" y = "-0.46558501798503177" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1619316377710425" y = "-0.0402374998146532" />
+<heading x = "0.7431039526961326" y = "-1.7160118051713351" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.1491216700818119" y = "0.4754899795301256" />
+<heading x = "-1.600124959382321" y = "3.381741055817887E-4" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.026592649410987164" y = "0.010956938204161092" />
+<heading x = "1.5128229136207443" y = "-0.147535866907142" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.2939793511533142" y = "-0.4272436703177282" />
+<heading x = "-0.2947039719901782" y = "-1.5727522274322845" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.02032200134300784" />
+<heading x = "-2.5697749017420426" y = "-0.03401403205553548" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-0.28767254584068747" y = "0.17302169911279705" />
+<heading x = "-1.8613466626521886" y = "-0.3078775753989883" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.1858145638672892" y = "-0.5690063492937956" />
+<heading x = "-0.6928045106255236" y = "-1.4423667737635004" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.3969895773744297" y = "-0.07515718099023992" />
+<heading x = "-1.4562815015022073" y = "-1.1994349454566" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.9956990535712504" y = "-0.2221188868806079" />
+<heading x = "-1.2888025775477838" y = "-0.9483606466456675" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2882219040675447" y = "-0.04707781387508118" />
+<heading x = "-1.9599275770619593" y = "-1.6624030476006828" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "13440" >
+
+<ball>
+  <position x = "-1.3524137384987207" y = "-0.7226634650999234" />
+  <timeout value = "54.88000000000011" />
+  <velocity x = "-0.26124072066287674" y = "-0.17199380781746265" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1332168365110404" y = "-0.18474167943435085" />
+<heading x = "-1.6339846797178095" y = "-0.9093921411841472" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.293934557009201" y = "0.5215754324891289" />
+<heading x = "-1.5749757293454347" y = "0.2825799921664936" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.10180734656367965" y = "-0.16144810009402588" />
+<heading x = "-1.3522755973873821" y = "0.69408263824317" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.3058297531892549" y = "-0.5365221275613635" />
+<heading x = "-0.9943920923340434" y = "1.2536284803335969" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.26297985602484053" />
+<heading x = "-0.6470819293415433" y = "-2.4872042490956843" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-0.45179424191729706" y = "0.17227379394601366" />
+<heading x = "-1.7486369254836065" y = "0.7082858906086159" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.2874994230759278" y = "-0.6934419815240873" />
+<heading x = "-0.8341334602568904" y = "-1.365511395221536" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.47880205087745237" y = "-0.1275764524522808" />
+<heading x = "1.307691889712966" y = "1.3599051149175567" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "-0.8394638003481887" y = "-1.3622409947968004" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.0964915612753365" />
+<heading x = "1.2103231969164883" y = "2.2671607263283855" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "14000" >
+
+<ball>
+  <position x = "-1.3355522161776987" y = "-0.7399260812831896" />
+  <timeout value = "54.32000000000012" />
+  <velocity x = "-0.09927541119939669" y = "0.06898518811095174" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.294475460147494" y = "-0.3145817231471062" />
+<heading x = "0.8049989165819773" y = "-1.6878615892015087" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5329216598528471" />
+<heading x = "-1.5791806776844317" y = "0.2580472577419469" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.03159203784620469" y = "-0.0288383261803565" />
+<heading x = "1.0018051921618072" y = "-1.1431475656964172" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.3058297531892549" y = "-0.573501890848561" />
+<heading x = "0.011310904502276486" y = "-1.600085017566048" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.4440270451136197" />
+<heading x = "-2.2653130233789276" y = "1.2137779476122572" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-0.6130235928774702" y = "0.2192582820100377" />
+<heading x = "-1.8252276512913526" y = "0.47743483425641775" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.2939887393694431" y = "-0.6934419815240873" />
+<heading x = "-1.2455920781661304E-4" y = "-1.6001249902695114" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.4044587172623304" y = "-0.021353876029195633" />
+<heading x = "-1.767561220794136" y = "0.6596418200392875" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "-0.7905657956111249" y = "-1.3911886007331102" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.494617751284542" y = "-0.6178853251017182" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "14560" >
+
+<ball>
+  <position x = "-1.3355522161776987" y = "-0.7399260812831896" />
+  <timeout value = "53.76000000000013" />
+  <velocity x = "-0.0" y = "0.0" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.294475460147494" y = "-0.3145817231471062" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5264752577901658" />
+<heading x = "-1.588388684326282" y = "-0.19344608423078197" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.1412564867136596" y = "-0.10302818704994307" />
+<heading x = "-0.5106342248382362" y = "1.4316608147266774" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.3058297531892549" y = "-0.573501890848561" />
+<heading x = "0.011310904502276486" y = "-1.600085017566048" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.4440270451136197" />
+<heading x = "-0.018166721137128045" y = "2.569935791073996" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-0.7765432532573642" y = "0.2577261578110924" />
+<heading x = "-1.846107642686754" y = "0.3889557450579138" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.2939896113745066" y = "-0.6934419815240873" />
+<heading x = "-1.3612513914491783E-11" y = "-1.600124995117569" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.31267377510869576" y = "0.0010840165084479393" />
+<heading x = "-1.8595919476747218" y = "-0.3183045525017432" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "-0.7905657956111249" y = "-1.3911886007331102" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.494617751284542" y = "-0.6178853251017182" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "15120" >
+
+<ball>
+  <position x = "-1.3355522161776987" y = "-0.7399260812831896" />
+  <timeout value = "53.200000000000145" />
+  <velocity x = "-0.0" y = "0.0" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.294475460147494" y = "-0.3145817231471062" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5184035669095914" />
+<heading x = "-1.5759930339781556" y = "0.2768500620414014" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.04676511638893503" y = "-0.09767798470788713" />
+<heading x = "-0.05225380187307624" y = "-1.519101556904544" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.3058297531892549" y = "-0.573501890848561" />
+<heading x = "0.011310904502276486" y = "-1.600085017566048" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.4440270451136197" />
+<heading x = "-0.018166721137128045" y = "2.569935791073996" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-0.9418120479672218" y = "0.2877989206369912" />
+<heading x = "-1.863159667386028" y = "0.29670870197212934" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.2939896113746017" y = "-0.6934419815240873" />
+<heading x = "-5.978724150970732E-15" y = "-1.600124995117569" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.26539600599154867" y = "-0.007210830499505327" />
+<heading x = "-1.71550252826904" y = "-0.7851439839306747" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "-0.7905657956111249" y = "-1.3911886007331102" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.494617751284542" y = "-0.6178853251017182" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "15680" >
+
+<ball>
+  <position x = "0.0400091084630223" y = "-0.43207534259335456" />
+  <timeout value = "59.720000000000006" />
+  <velocity x = "0.12404707882962203" y = "0.29063434455314724" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.294475460147494" y = "-0.3145817231471062" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5699952056416666" />
+<heading x = "-1.2841476972043162" y = "0.9546542262855444" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.18509507111538978" y = "-0.27642736795639883" />
+<heading x = "-0.05225380187307624" y = "-1.519101556904544" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-1.2350173464717233" y = "-0.5809458082369847" />
+<heading x = "1.598291537560755" y = "0.07657780985166562" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.4440270451136197" />
+<heading x = "-1.2539956286423548" y = "2.2433000163477614" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "-1.7609461092301062" y = "-0.6771032420446316" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.2314937367311203" y = "-0.7021896050531443" />
+<heading x = "1.5994652895085464" y = "-0.045943309168381165" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.16068903044053667" y = "-0.16230245536415852" />
+<heading x = "-0.5251055210284394" y = "-1.8120883509877357" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.5146840839073412" y = "-0.5158799530489416" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.473569042851379" y = "-0.6973924219887352" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "16240" >
+
+<ball>
+  <position x = "-0.04906358111484309" y = "-0.46379436389758266" />
+  <timeout value = "59.16000000000002" />
+  <velocity x = "-0.3898905124345053" y = "-0.33799613653643845" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1520465934620463" y = "-0.4433373751966334" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5155202015386735" />
+<heading x = "-1.5852153862328784" y = "0.2179270044086921" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.059658628626880685" y = "-0.25340255868427475" />
+<heading x = "1.4070863936245546" y = "0.5748981482633644" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.9042356531759388" y = "-0.5340406493686287" />
+<heading x = "1.4616866337729097" y = "0.6510546710143624" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.3067450030662786" y = "-0.5880511254389724" />
+<heading x = "-1.4958731711998794" y = "-2.0897998601982004" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.5300363062692282" y = "-1.10380655075879" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.2351687162153853" y = "-0.7009807256902546" />
+<heading x = "-1.5919848259684397" y = "0.16119650705346245" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.036305827649035005" y = "-0.4595363012077184" />
+<heading x = "-1.7321542394949963" y = "-0.747690905788957" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.584342808148105" y = "-0.2241826627314803" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.4799018683372642" y = "-0.6745270368319922" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "16800" >
+
+<ball>
+  <position x = "-0.4056321322229878" y = "-0.5248854384927302" />
+  <timeout value = "58.60000000000003" />
+  <velocity x = "-1.0446569953209368" y = "0.12407966040827272" />
+  <score west = "0" east = "2" />
+<kick time="16640.0" kicker="13"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.902796076762513" y = "-0.668659766283306" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5045689187672594" />
+<heading x = "-1.5959719193923416" y = "0.1152112516689435" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.07351190381426015" y = "-0.44098943099935245" />
+<heading x = "-1.5199099660741118" y = "-0.016543730794234185" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.5885891009126603" y = "-0.43072842113633286" />
+<heading x = "1.5940527837862053" y = "0.13926852660758912" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.301492678698435" y = "-0.6114693467363929" />
+<heading x = "0.5624364010565737" y = "-2.5077011972654417" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2301611758223043" y = "-1.4304207358324632" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.1820640842001637" y = "-0.6694940324514528" />
+<heading x = "1.382691708562595" y = "0.8053344889375171" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.26548470645361566" y = "-0.5563844209097839" />
+<heading x = "-1.8750582934834545" y = "0.20870169150947407" />
+<speed value = "1.0" />
+null<kick timestamp="16640"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.5254197818331994" y = "-0.4832126749082174" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.483581713864243" y = "-0.6608493554200918" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "17360" >
+
+<ball>
+  <position x = "-0.5800985442057746" y = "-0.7177535605238607" />
+  <timeout value = "58.04000000000004" />
+  <velocity x = "-0.4532239395390081" y = "0.3554772294096227" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.6535455600629796" y = "-0.7008486792956878" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5099489670877094" />
+<heading x = "-1.591594408108313" y = "0.16500678797658172" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.06097146442922364" y = "-0.23214689557073942" />
+<heading x = "0.3861200955686621" y = "1.470139881711277" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.5076272482760313" y = "-0.5498679938565117" />
+<heading x = "0.23908511443427863" y = "-1.5821625416043537" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2567739934722486" y = "-0.6818449918563231" />
+<heading x = "0.18970032908073373" y = "-2.562989228449207" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "0.8468270647083221" y = "-1.6859074477792328" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-1.0816686414380186" y = "-0.5423453617523173" />
+<heading x = "1.505005827665444" y = "0.5434679923353822" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.5083308235393332" y = "-0.6849178416673058" />
+<heading x = "-0.7112094246890865" y = "-1.7474499003500554" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.2359292634088985" y = "-1.0163064773234194" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.428684769048494" y = "-0.8404702806119126" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "17920" >
+
+<ball>
+  <position x = "-0.5102363508517476" y = "-0.7319525179437515" />
+  <timeout value = "57.480000000000054" />
+  <velocity x = "0.3982053192327631" y = "-0.13692876738791024" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.6001347350559367" y = "-0.7008486792956878" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5505478356730827" />
+<heading x = "-1.509854636015946" y = "0.5298480707723251" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.011062433107613345" y = "0.09156616256131919" />
+<heading x = "-0.7249105652494386" y = "1.3360032456509001" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.2396875772326265" y = "-0.5123254827198912" />
+<heading x = "1.52327009804448" y = "0.4899471485819262" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2369902734513416" y = "-0.6818449918563231" />
+<heading x = "-0.20602594678918468" y = "-2.56172857837235" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "0.8951282414476442" y = "-1.6607665192202208" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.9178752224681129" y = "-0.5070718804417413" />
+<heading x = "1.5041156379655667" y = "0.5459268702192959" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.46215764322673397" y = "-0.6849178416673058" />
+<heading x = "0.5172708750213361" y = "-1.81434033242241" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.273796169703675" y = "-0.9684231090015593" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.42616084256061" y = "-0.8477284742331074" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "18480" >
+
+<ball>
+  <position x = "-0.42405196984046545" y = "-0.7391607752890483" />
+  <timeout value = "56.920000000000066" />
+  <velocity x = "0.38783304081253284" y = "-0.164019803858386" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.511116693377532" y = "-0.7008486792956878" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5348241473670691" />
+<heading x = "-1.340793459456155" y = "0.8733114559420342" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.227359417228571" y = "-0.0508124847943395" />
+<heading x = "-0.5502963764351406" y = "-1.4168888093574437" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.0888759911984931" y = "-0.4892396109776365" />
+<heading x = "1.5292254619306072" y = "-0.47103023956336526" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1228262388891939" y = "-0.7023125719209512" />
+<heading x = "1.3951140176560037" y = "-2.1583690318709925" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "0.9930347682528916" y = "-1.6041452393848028" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.7726328411316652" y = "-0.4239544053129646" />
+<heading x = "1.2736080197561286" y = "0.9686705384251513" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.3883680089024222" y = "-0.6849178416673058" />
+<heading x = "0.046387376694091056" y = "-1.8860668628878037" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.3306995692595553" y = "-0.8886161468105528" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.4101518730191653" y = "-0.8922264000701898" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "19040" >
+
+<ball>
+  <position x = "-0.35370411603826635" y = "-0.7422867026697976" />
+  <timeout value = "56.36000000000008" />
+  <velocity x = "-0.3715451786860385" y = "-0.0339187823066292" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.4399022600348079" y = "-0.7008486792956878" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5392805337576204" />
+<heading x = "-1.5492875324604798" y = "-0.40013515436976727" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.43717458348244825" y = "-0.2782623273100169" />
+<heading x = "-0.0611389825627584" y = "-1.5187699051571935" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.3824857722306213" y = "-0.44275681318429555" />
+<heading x = "0.6398591345268472" y = "1.4666220671879153" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.9451681455318953" y = "-0.7023125719209512" />
+<heading x = "1.3951169132420749" y = "-2.1583671602361605" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.0770909250815024" y = "-1.5489593729685338" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.6537545504510412" y = "-0.30613473009304887" />
+<heading x = "0.9889564970972837" y = "1.257920922335371" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.31468271107524226" y = "-0.6849178416673058" />
+<heading x = "0.042180780396357406" y = "-1.8861656294623637" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.3705372869938703" y = "-0.825849589791919" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.390002846534273" y = "-0.9448737447712654" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "19600" >
+
+<ball>
+  <position x = "-0.2960924864209919" y = "-0.7252999801101243" />
+  <timeout value = "55.80000000000009" />
+  <velocity x = "0.4215001886049433" y = "-0.1429786159271855" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.3686878266920839" y = "-0.7008486792956878" />
+<heading x = "1.3871978161551453" y = "-1.254026402774039" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5603500733969611" />
+<heading x = "-1.5882269719990139" y = "0.19476931332949582" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.5910680521863192" y = "-0.4171057985601127" />
+<heading x = "-0.9740010764698372" y = "1.166928405274119" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.61559457549217" y = "-0.25654014678192" />
+<heading x = "1.3272965054302508" y = "0.8936912143870746" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.7430658468245336" y = "-0.7023125719209512" />
+<heading x = "0.9673744953532722" y = "-2.3809843732666547" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.1245371828239874" y = "-1.5148650515627753" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.5364529114493081" y = "-0.18587472719270096" />
+<heading x = "1.1267363212763721" y = "1.136162515803346" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.23502852957352488" y = "-0.6849178416673058" />
+<heading x = "0.5247974231124809" y = "-1.8121776029668009" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.3954986582816715" y = "-0.7829326246453485" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3092871863372804" y = "-0.08483274955999953" />
+<heading x = "-2.383158784247573" y = "-0.9620053061514947" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "20160" >
+
+<ball>
+  <position x = "-0.21934062841709126" y = "-0.7129029484043469" />
+  <timeout value = "55.2400000000001" />
+  <velocity x = "0.37410474922602666" y = "-0.06881741277664818" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.29333254451294993" y = "-0.7008486792956878" />
+<heading x = "1.1855228093224148" y = "-1.4461796805986071" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5506357661780369" />
+<heading x = "-1.568631430215944" y = "-0.31590415657075815" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.3904369618284225" y = "-0.22074483027419708" />
+<heading x = "1.5178823809201911" y = "0.08020646914091346" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.7574341108694799" y = "0.03888597441990533" />
+<heading x = "0.20606507978389885" y = "1.5868009273042587" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-0.14995061393787987" y = "-2.565621720632185" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.216620965231828" y = "-1.4419547243094613" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.4140256351740832" y = "-0.07088869910960725" />
+<heading x = "1.1953892985058625" y = "1.0636937646793188" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.16109974351335482" y = "-0.6849178416673058" />
+<heading x = "0.513367262124431" y = "-1.8154487197877183" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.4445157979610785" y = "-0.6883125085605144" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.299645361698473" y = "-0.09197664329062613" />
+<heading x = "-2.3802426215588244" y = "-0.9691981544115617" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "20720" >
+
+<ball>
+  <position x = "-0.19482031282750292" y = "-0.692077563357663" />
+  <timeout value = "54.68000000000011" />
+  <velocity x = "-0.2729604659760139" y = "-0.05508449625147233" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.26684279869875877" y = "-0.7008486792956878" />
+<heading x = "-0.030167447439482256" y = "-1.8697566486350534" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.53319176811304" />
+<heading x = "-1.5670727825461885" y = "-0.32354736006177864" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.11995074249058917" y = "-0.04629121442728784" />
+<heading x = "0.7456014896219654" y = "1.3245672571347618" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.7812464314996799" y = "0.36091984979747327" />
+<heading x = "0.16211714846720796" y = "1.5918913374262895" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-1.5743679060860387" y = "-2.0313211701467258" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2471089796434127" y = "-1.4156691678823714" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.2802646457665621" y = "0.02956528592858757" />
+<heading x = "1.4071770217589632" y = "0.7617432831561919" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.13524902456447618" y = "-0.6849178416673058" />
+<heading x = "-0.8755981923933228" y = "-1.6711456565714269" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.4591634588890223" y = "-0.6566901858890725" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2758145524964535" y = "-0.13146897161391852" />
+<heading x = "-0.4245258979169719" y = "-2.534694806480218" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "21280" >
+
+<ball>
+  <position x = "-0.18468132939966123" y = "-0.7325919351366267" />
+  <timeout value = "54.120000000000125" />
+  <velocity x = "-0.07606502999291316" y = "-0.0967188410341237" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.27963669771191846" y = "-0.7008486792956878" />
+<heading x = "-0.0445100437757685" y = "-1.8694702073055562" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5427234481359007" />
+<heading x = "-1.5291064769158225" y = "0.47141635764373047" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.11089680919934314" y = "0.2609792873670374" />
+<heading x = "-0.7188558678887839" y = "1.3392707871083664" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.697306975193999" y = "0.66280516243549" />
+<heading x = "-0.9177983864250935" y = "1.3107425841390423" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-1.5743679060860387" y = "-2.0313211701467258" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2391045940229681" y = "-1.4226804999968106" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.16629518969276677" y = "0.12078563219808022" />
+<heading x = "1.5888938170174558" y = "-0.18925231370765166" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.14184724591843448" y = "-0.6849178416673058" />
+<heading x = "-0.14981388903230872" y = "-1.8806796108463066" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.446827336309335" y = "-0.6834403111523601" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.30751645300105" y = "-0.12931438969936315" />
+<heading x = "-0.538369194293916" y = "2.512978036242124" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "21840" >
+
+<ball>
+  <position x = "-0.20182994977800073" y = "-0.7255073990245637" />
+  <timeout value = "53.56000000000014" />
+  <velocity x = "-0.0" y = "0.0" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.2895168719282264" y = "-0.7008486792956878" />
+<heading x = "-0.07773696568309252" y = "-1.8683835163494635" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.533998810222057" />
+<heading x = "-1.5630169212184044" y = "-0.34260488027017316" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.2507559709144696" y = "0.11824245660440137" />
+<heading x = "0.5453323362921395" y = "-1.4188067673203977" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.5377080056610772" y = "0.7023803689652861" />
+<heading x = "-0.7300824317338166" y = "1.423860822859326" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-1.5743679060860387" y = "-2.0313211701467258" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2248243014443108" y = "-1.4349931813745513" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-9.677399169008925E-4" y = "0.14363542109844002" />
+<heading x = "1.5997202126834584" y = "0.03598945862319406" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.142196017251885" y = "-0.6849178416673058" />
+<heading x = "0.03832454802827755" y = "-1.8862479235292557" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.4424897837360682" y = "-0.6925483548583964" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2893684995659898" y = "-0.04460410376841625" />
+<heading x = "1.8333048922785058" y = "1.801081111984604" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "22400" >
+
+<ball>
+  <position x = "-0.2096563419739156" y = "-0.7342584891600002" />
+  <timeout value = "53.00000000000015" />
+  <velocity x = "-0.04311365621060444" y = "-0.04898056167761205" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.2985212343148872" y = "-0.7008486792956878" />
+<heading x = "-0.06610200855737063" y = "-1.8688313258463647" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5417818168930655" />
+<heading x = "-1.5687324774606244" y = "-0.3154019881995852" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.16165421160372923" y = "-0.19769937579497943" />
+<heading x = "0.1212296932275029" y = "-1.5151578668508325" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.24834334101220412" y = "0.7023803689652861" />
+<heading x = "-1.381918457539756" y = "0.8066606329249874" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-1.5743679060860387" y = "-2.0313211701467258" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2157551060060572" y = "-1.4426848312158138" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.11896117253734032" y = "0.14032390415978332" />
+<heading x = "0.7844313772171442" y = "-1.3946567371354193" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.1591871542129501" y = "-0.6849178416673058" />
+<heading x = "0.15408327016273565" y = "-1.8803346366686855" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.436562328730625" y = "-0.7047614317427164" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.308946640339354" y = "-0.09659323979243667" />
+<heading x = "-2.252623368558564" y = "-1.237169333367049" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "22960" >
+
+<ball>
+  <position x = "-0.21524642942915564" y = "-0.7406092756033287" />
+  <timeout value = "52.44000000000016" />
+  <velocity x = "-0.0" y = "-0.0" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.3078074660471587" y = "-0.7008486792956878" />
+<heading x = "-0.06950150743924623" y = "-1.8687079869427627" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5414351276191276" />
+<heading x = "-1.5390393525750052" y = "0.43790166844339423" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.1886728237364273" y = "-0.5235857096088803" />
+<heading x = "-0.7677139117571117" y = "-1.3118747461913405" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.06769652608420576" y = "0.4669449486321945" />
+<heading x = "-0.47214124028794197" y = "-1.5288828108195094" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-1.5743679060860387" y = "-2.0313211701467258" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2036148821131631" y = "-1.4528286944976398" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.11896117253734032" y = "0.14032390415978332" />
+<heading x = "-0.5675809768213738" y = "-1.4960788196985126" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.16078523122069474" y = "-0.6849178416673058" />
+<heading x = "0.03822606524653212" y = "-1.8862499219180282" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.4284167941752381" y = "-0.7211279096790912" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.308946640339354" y = "-0.09659323979243667" />
+<heading x = "-2.3673509016660224" y = "-1.000274816428502" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "23520" >
+
+<ball>
+  <position x = "-0.21524642942915564" y = "-0.7406092756033287" />
+  <timeout value = "51.88000000000017" />
+  <velocity x = "-0.0" y = "-0.0" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.31705593432805784" y = "-0.7008486792956878" />
+<heading x = "-0.05752998498676234" y = "-1.8691148442049845" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5592354448739051" />
+<heading x = "-1.5990076539271616" y = "0.05978731205159133" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.3214824997250017" y = "-0.4453409001509482" />
+<heading x = "0.6520568445113715" y = "1.3730338202411014" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.03147277647699322" y = "0.1459130980259591" />
+<heading x = "-0.4724206993867454" y = "-1.5287964818087914" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.5842179575850975" y = "-0.7023125719209512" />
+<heading x = "-1.5743679060860387" y = "-2.0313211701467258" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.2036148821131631" y = "-1.4528286944976398" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.11896117253734032" y = "0.14032390415978332" />
+<heading x = "-0.5675809768213738" y = "-1.4960788196985126" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.175082836395473" y = "-0.6849178416673058" />
+<heading x = "-0.1530835724008116" y = "-1.8804162889799179" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.4284167941752381" y = "-0.7211279096790912" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.308946640339354" y = "-0.09659323979243667" />
+<heading x = "-2.3673509016660224" y = "-1.000274816428502" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "24080" >
+
+<ball>
+  <position x = "0.021279143354153242" y = "0.46292396631621546" />
+  <timeout value = "59.60000000000001" />
+  <velocity x = "0.04305029002285327" y = "-0.2766706932961064" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.315761594488227" y = "-0.7008486792956878" />
+<heading x = "0.17174110111816648" y = "-1.862096934691296" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5562400670225498" />
+<heading x = "-1.598644117047817" y = "-0.0688257729953347" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.12944691584742235" y = "-0.20103736144596251" />
+<heading x = "0.4894488556926749" y = "1.439041284210127" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.2408112915996996" y = "0.07442217453548966" />
+<heading x = "-0.5162702662745664" y = "1.514551092621437" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.6489012322832682" y = "-0.7023125719209512" />
+<heading x = "-2.53819983979148" y = "-0.40304041147570774" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.8656456535751218" y = "0.28065333651367275" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.06040280406989026" y = "0.17187217109085173" />
+<heading x = "-0.420190410553492" y = "1.543968917717869" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.0893908121407328" y = "-0.6775300202842238" />
+<heading x = "1.1377398824944347" y = "1.504974405025398" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.3100288776159825" y = "0.9188168151553437" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2320297499401254" y = "-0.02615971732713042" />
+<heading x = "-0.06589757285086494" y = "2.569155018657373" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "24640" >
+
+<ball>
+  <position x = "0.03633368610270511" y = "0.5326417422977644" />
+  <timeout value = "59.04000000000002" />
+  <velocity x = "0.009874089389682308" y = "0.5279076646144896" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.5140641849907828" y = "-0.7008486792956878" />
+<heading x = "-1.8475187030803026" y = "-0.28909279093134926" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5458557718004796" />
+<heading x = "-1.5456697682941183" y = "0.4138900426219581" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.08630502383912177" y = "0.13091305911908863" />
+<heading x = "0.12928456708688532" y = "1.5144918291998661" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.1046401071584672" y = "0.3760780384002475" />
+<heading x = "0.5334551647832483" y = "1.5085839675556934" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.8097213257437231" y = "-0.4594297867324516" />
+<heading x = "-0.8565961128032098" y = "2.4230441802679605" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.8565122022785656" y = "0.33580119533853675" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.07383949410149382" y = "0.4692626531054431" />
+<heading x = "0.18161724192063464" y = "1.5897846324068998" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.07624427080015309" y = "-0.5107689512305847" />
+<heading x = "0.11622310777064501" y = "1.8830539528171075" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.2962826534032437" y = "0.9381104852232737" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3048709170537807" y = "0.07911854418155276" />
+<heading x = "0.16114266910349329" y = "2.564943087125756" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "25200" >
+
+<ball>
+  <position x = "-0.07229311690733171" y = "0.7355777794276137" />
+  <timeout value = "58.48000000000003" />
+  <velocity x = "-0.12848138656782243" y = "0.4873484721486358" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.8373216296281089" y = "-0.7008486792956878" />
+<heading x = "-1.7327761947457303" y = "-0.7031263463436054" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5203055425891867" />
+<heading x = "-1.3142178758555818" y = "-0.9128150824683182" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.00125589731800229" y = "0.4413498790761421" />
+<heading x = "-0.498887288144796" y = "1.4357964597140958" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.13554018487136427" y = "0.6829840249665435" />
+<heading x = "-1.383161722055133" y = "0.8045269732218299" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.8097213257437231" y = "-0.4594297867324516" />
+<heading x = "-0.8565961128032098" y = "2.4230441802679605" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.7515291443787386" y = "0.7011031710040141" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.001923147341341031" y = "0.6972891885630711" />
+<heading x = "-0.46624744900515835" y = "1.5306904704401154" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "-0.04889077511576417" y = "-0.34530726780244275" />
+<heading x = "0.5020266887925174" y = "1.8186173879461345" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.1328426255680193" y = "1.1300741505300245" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3005130134447271" y = "0.10195240062296078" />
+<heading x = "-2.3447455304826414" y = "1.052173178370214" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "25760" >
+
+<ball>
+  <position x = "-0.13310763988276766" y = "0.5048995026105927" />
+  <timeout value = "57.920000000000044" />
+  <velocity x = "-0.08565425771188157" y = "-0.3248989814324237" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.0968076952331192" y = "-0.5744256507446084" />
+<heading x = "-1.2327286422028851" y = "1.4061579195426919" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5337522641424707" />
+<heading x = "-1.5946711921085104" y = "0.1319992009794847" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.10415186450874833" y = "0.6349763570007377" />
+<heading x = "1.4903425701673156" y = "-0.298795956376722" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.2008247049735022" y = "0.701579571039796" />
+<heading x = "1.4730890457899415" y = "-0.6248269065698754" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.8097213257437231" y = "-0.4594297867324516" />
+<heading x = "-0.8565961128032098" y = "2.4230441802679605" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.842616562461171" y = "0.4051718200267356" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.04962700465062485" y = "0.6972891885630711" />
+<heading x = "1.0425768332248389" y = "1.2138507102699518" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.03914195107961547" y = "-0.20581252867170316" />
+<heading x = "1.4765698179089746" y = "1.1743685847468237" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.2152655432154875" y = "1.040927307487495" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3005130134447271" y = "0.10195240062296078" />
+<heading x = "-2.467523097688286" y = "0.7184913098812036" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "26320" >
+
+<ball>
+  <position x = "-0.1699389706988767" y = "0.3651929405946506" />
+  <timeout value = "57.360000000000056" />
+  <velocity x = "-0.04282712885594071" y = "-0.16244949071621156" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1930092675882795" y = "-0.7002517775408167" />
+<heading x = "1.6638033601368665" y = "-0.8536148890438081" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.542399741074696" />
+<heading x = "-1.5946711921085104" y = "0.1319992009794847" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.06340430760347973" y = "0.36819489852090914" />
+<heading x = "-0.10410886924131563" y = "-1.5164304610978028" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.2374630502618509" y = "0.40039650404048" />
+<heading x = "-0.2921917510327281" y = "-1.57322089378079" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-0.921202708066784" y = "-0.16807382181326813" />
+<heading x = "-0.983598314463743" y = "2.3743281904117817" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.8820885193769155" y = "0.1309305358944604" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.048207510507065204" y = "0.5144704791385566" />
+<heading x = "-1.4162116740083992" y = "-0.7448117174174474" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.20190228217189757" y = "-0.1754912799494403" />
+<heading x = "1.8807636899108906" y = "-0.14875463929831403" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.2904044309448053" y = "0.9461799007577858" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.303410623109971" y = "0.007948194159523674" />
+<heading x = "2.5587392466745524" y = "0.2403195113330275" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "26880" >
+
+<ball>
+  <position x = "-0.30333953595709895" y = "0.29575658463301074" />
+  <timeout value = "56.80000000000007" />
+  <velocity x = "-1.0510753142470852" y = "-0.23025352066882926" />
+  <score west = "0" east = "2" />
+<kick time="26800.0" kicker="12"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1047214940616734" y = "-0.4580539590786391" />
+<heading x = "-0.5002201019405924" y = "1.8018545583965826" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5421515408047649" />
+<heading x = "-1.5946711921085104" y = "0.1319992009794847" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.1736089751250774" y = "0.08923927165375718" />
+<heading x = "-0.42630922254571085" y = "-1.4589929563820627" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.08600490191124874" y = "0.1339247727003396" />
+<heading x = "0.10335075038456724" y = "-1.5967838370909655" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.0575305912759785" y = "0.13888732398225723" />
+<heading x = "-1.1970233796852385" y = "2.274210858404939" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.0843255905798612" y = "0.30841658962436" />
+<heading x = "1.886621636062045" y = "-0.007668268551227281" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.19982198117921432" y = "0.3206420696141211" />
+<heading x = "-1.5643729919021017" y = "-0.33635865115567704" />
+<speed value = "1.0" />
+<kick timestamp="26800"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.308404449734462" y = "-0.18281825939893803" />
+<heading x = "1.7249905196917943" y = "0.7640731031605767" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "1.2897306507658894" y = "0.9470981197716503" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3088649386365288" y = "0.05014007109625128" />
+<heading x = "-2.5367627896792952" y = "0.41198853005699176" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "27440" >
+
+<ball>
+  <position x = "-0.8492735244574809" y = "0.1761617076521602" />
+  <timeout value = "56.24000000000008" />
+  <velocity x = "-0.8869669008702167" y = "-0.19430315684693023" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1113433162967783" y = "-0.43498555058809363" />
+<heading x = "-0.40240185767045206" y = "1.8261907745203867" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5419033405348338" />
+<heading x = "-1.5946711921085104" y = "0.1319992009794847" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.11862308308926503" y = "0.02898397019411487" />
+<heading x = "-1.0441998946177675" y = "1.1045571873290416" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.3705843548988172" y = "0.07457924196372803" />
+<heading x = "-1.5952199771279199" y = "0.12519274967824184" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1520800185528817" y = "0.18679011948588228" />
+<heading x = "-2.5443158287798093" y = "-0.3624320121353975" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.060799805667445" y = "0.3036692278038614" />
+<heading x = "1.8493592269237067" y = "-0.37318956281245386" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.5282642982611345" y = "0.24977892877638003" />
+<heading x = "-1.5646422962850879" y = "-0.3351036924232963" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.30990213422410956" y = "-0.1172935769427428" />
+<heading x = "1.1435256906883484" y = "1.5005828849936067" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "0.7844050107303109" y = "1.3946715667644412" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.2624227617475117" y = "0.0038923546593827713" />
+<heading x = "-0.4073610752923173" y = "-2.537509990982634" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "28000" >
+
+<ball>
+  <position x = "-1.3033068014668163" y = "0.07669903441157311" />
+  <timeout value = "55.68000000000009" />
+  <velocity x = "-0.7228584874933481" y = "-0.1583527930250312" />
+  <score west = "0" east = "2" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-1.1113433162967783" y = "-0.43498555058809363" />
+<heading x = "-0.4405493963471933" y = "1.8173651887769073" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5390564558105423" />
+<heading x = "-1.394695880544493" y = "-0.7843617792780455" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.051304859826244165" y = "0.1096390513413931" />
+<heading x = "0.5642578880824394" y = "-1.4113869192169612" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.700983957255787" y = "0.04007042267883192" />
+<heading x = "-1.5979871244332495" y = "-0.08268706153657988" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1200413242063545" y = "-0.07796482417955616" />
+<heading x = "0.20195792261342851" y = "-2.5620524970214156" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "-1.1001072144868853" y = "0.10530369269306458" />
+<heading x = "-1.8865911913781674" y = "0.01317864235444246" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.582812269748195" y = "0.2447225186548805" />
+<heading x = "-1.5024172497563024" y = "0.5505836972111581" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.4548091568474913" y = "-0.0350588309038281" />
+<heading x = "1.211380574617589" y = "1.446359949472869" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "-0.7029079658921088" y = "1.4374701358586264" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3090351523046238" y = "-0.005299806168390467" />
+<heading x = "-0.5553649812904393" y = "2.5092767359452943" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<goal time="28120.0" team="EAST" goaler="12">
+<ball>
+  <position x = "-1.3886431764227878" y = "0.058004845224185655" />
+  <timeout value = "55.560000000000095" />
+  <velocity x = "-0.6876923989125907" y = "-0.15064914363462426" />
+  <score west = "0" east = "3" />
+</ball>
+<westTeam>
+<robot id="6" playerid="1">
+<position x = "-1.1113433162967783" y = "-0.43498555058809363" />
+<heading x = "-0.5008171615962534" y = "1.8016886997066592" />
+<speed value = "1.0" />
+</robot>
+<robot id="7" playerid="2">
+<position x = "-1.3048478558230083" y = "0.5326322408948493" />
+<heading x = "-1.6000504857429545" y = "-0.015441602045605627" />
+<speed value = "1.0" />
+</robot>
+<robot id="8" playerid="3">
+<position x = "0.05146362547772069" y = "0.0620178103339593" />
+<heading x = "-0.1854778773177886" y = "-1.5086410961609416" />
+<speed value = "1.0" />
+</robot>
+<robot id="9" playerid="4">
+<position x = "-0.7488871064022304" y = "0.03702799148053081" />
+<heading x = "-1.5965189066611318" y = "-0.10736564009749298" />
+<speed value = "1.0" />
+</robot>
+<robot id="10" playerid="0">
+<position x = "-1.1340383168628752" y = "-0.1234828645393244" />
+<heading x = "-1.0573011270076134" y = "-2.3424376889958958" />
+<speed value = "1.0" />
+</robot>
+</westTeam>
+<eastTeam>
+<robot id="11" playerid="1">
+<position x = "-1.1481013535441513" y = "0.1060223499066078" />
+<heading x = "-1.8865332738417402" y = "0.0198042088447254" />
+<speed value = "1.0" />
+</robot>
+<robot id="12" playerid="2">
+<position x = "-0.6061250894922373" y = "0.2503870349580831" />
+<heading x = "-1.564580141719407" y = "0.3353937687812348" />
+<speed value = "0.5" />
+</robot>
+<robot id="13" playerid="3">
+<position x = "0.46230426650203993" y = "-0.0124584928162831" />
+<heading x = "0.3647516698806414" y = "1.8510419280284507" />
+<speed value = "0.5" />
+</robot>
+<robot id="14" playerid="4">
+<position x = "-1.0861036900050343" y = "-0.30096205323183145" />
+<heading x = "-0.8840209041836878" y = "1.3337567398016232" />
+<speed value = "0.0" />
+</robot>
+<robot id="15" playerid="0">
+<position x = "1.3090351523046238" y = "-0.005299806168390467" />
+<heading x = "-1.6955233298468522" y = "1.9313468455834244" />
+<speed value = "0.0" />
+</robot>
+</eastTeam>
+</goal>
+<log time = "28560" >
+
+<ball>
+  <position x = "0.07075204658764425" y = "-0.205137958426162" />
+  <timeout value = "59.56000000000001" />
+  <velocity x = "-0.20162001944185357" y = "0.5395603467270982" />
+  <score west = "0" east = "3" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.32941797283537866" y = "-0.10107733535323118" />
+<heading x = "-0.35040305827530993" y = "-1.836877158862647" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.08012070000434138" y = "0.6746357103529728" />
+<heading x = "-1.2291979822078025" y = "1.024437563024837" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.03791100224659294" y = "-0.1932029673317478" />
+<heading x = "0.7647309599211531" y = "-1.3136158338487214" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.05221713309166861" y = "-0.31425278507044635" />
+<heading x = "0.7170886523717706" y = "1.4304488332826302" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1421449201327296" y = "-0.21809077622033576" />
+<heading x = "-0.7709494348452315" y = "-2.451639649074027" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5065846064816929" y = "0.15618193173980882" />
+<heading x = "1.8307131667822008" y = "-0.4559487920482806" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "0.04488969856764681" y = "0.42143264366809935" />
+<heading x = "-1.3978460559385406" y = "-0.7787338466363629" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5065846064816928" y = "-0.15618193173980868" />
+<heading x = "1.8307131667821994" y = "0.45594879204828587" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.12075216398041513" y = "-0.26098911109604017" />
+<heading x = "0.2785389566626934" y = "1.5756954177826559" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.1940946235842265" y = "-0.09386327026042011" />
+<heading x = "2.3895255687328083" y = "-0.946080100399618" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "29120" >
+
+<ball>
+  <position x = "-0.027645739773457044" y = "0.056497823342577136" />
+  <timeout value = "59.00000000000002" />
+  <velocity x = "-0.5482270045235135" y = "0.24381786544709058" />
+  <score west = "0" east = "3" />
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.5909671391377315" y = "-0.050751538442913746" />
+<heading x = "-0.9412483662635895" y = "1.6158439011878976" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.3357594104798098" y = "0.6993972423090717" />
+<heading x = "-1.5674373483194453" y = "-0.3217765670357392" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "0.029591308405072632" y = "-0.11526473084033034" />
+<heading x = "0.6256210784875368" y = "1.3852791293281261" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "-0.021688818512326027" y = "-0.22653174436119325" />
+<heading x = "0.6010794376009427" y = "1.4829374598051444" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.2805755624177675" y = "-0.10897838424109255" />
+<heading x = "1.6193194054873283" y = "1.9956714817354502" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.6295425648429461" y = "0.2604671542632931" />
+<heading x = "0.9872209611558047" y = "1.6077296955193088" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.11423601787596692" y = "0.37580512200821514" />
+<heading x = "-1.5979459978268" y = "0.08347806915179866" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.6168892722227802" y = "-0.2710801811078756" />
+<heading x = "0.3929198268295007" y = "-1.84526800483948" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "0.02578220855062388" y = "0.029194813657208406" />
+<heading x = "-0.5293851857582308" y = "1.5100169949704947" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3005727971812489" y = "-0.008952945577159423" />
+<heading x = "0.3894154192391198" y = "2.5403258907586683" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+<log time = "29680" >
+
+<ball>
+  <position x = "-0.5095402125142124" y = "0.1429971186068707" />
+  <timeout value = "58.44000000000003" />
+  <velocity x = "-0.9865383628254722" y = "0.10395219417423036" />
+  <score west = "0" east = "3" />
+<kick time="29320.0" kicker="14"/>
+
+</ball>
+
+    <westTeam name = "Equipo.ElPayoVallecano" >
+<player robotid = "6" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="6" playerid="1">
+<position x = "-0.7745243296917432" y = "0.22421792997395834" />
+<heading x = "-0.1518758689643082" y = "1.8638223414334147" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "7" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="7" playerid="2">
+<position x = "-0.5014363649004426" y = "0.7003525400746908" />
+<heading x = "-1.597514637291034" y = "0.09136182813897681" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "8" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="8" playerid="3">
+<position x = "-0.12133362462695156" y = "0.07178250444326445" />
+<heading x = "-1.5197284986541841" y = "-0.02872786762534644" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "9" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="9" playerid="4">
+<position x = "0.05807447829635179" y = "0.004377398865097698" />
+<heading x = "-1.4422691313077085" y = "0.6930077581650205" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "10" ControlSystem = "Equipo.ElPayoVallecano">
+<robot id="10" playerid="0">
+<position x = "-1.1490079733412886" y = "0.18830081559235942" />
+<heading x = "-0.6748065655433806" y = "2.4798258203147148" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </westTeam>
+
+    <eastTeam name = "teamsSoccerbots.AIKHomoG" >
+<player robotid = "11" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="11" playerid="1">
+<position x = "0.5600384319316958" y = "0.3238261511212604" />
+<heading x = "-1.1809383904452733" y = "-1.4713206713604372" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "12" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="12" playerid="2">
+<position x = "-0.32178021967174425" y = "0.30942381729839186" />
+<heading x = "-0.8411031452181341" y = "-1.361229407228687" />
+<speed value = "1.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "13" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="13" playerid="3">
+<position x = "0.5160357276593492" y = "-0.32419914472764344" />
+<heading x = "-1.7921683527863934" y = "0.5895189524272362" />
+<speed value = "0.5" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "14" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="14" playerid="4">
+<position x = "-0.273935344184331" y = "0.12852231633525418" />
+<heading x = "-1.5898695714831879" y = "0.18087218048075876" />
+<speed value = "1.0" />
+<kick timestamp="29320"/>
+
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+<player robotid = "15" ControlSystem = "teamsSoccerbots.AIKHomoG">
+<robot id="15" playerid="0">
+<position x = "1.3052837757504019" y = "0.002083660827029394" />
+<heading x = "-2.5624106457629265" y = "0.1973618060335432" />
+<speed value = "0.0" />
+</robot>
+<customCSSInfo>
+
+</customCSSInfo>
+</player>
+    </eastTeam>
+
+</log>
+
+
+
+</SoccerBotsLOG>

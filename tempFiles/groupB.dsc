@@ -1,0 +1,8 @@
+topillosteam t111215.Equipo
+EquipoRevelacion t1112XX.EquipoRevelacion
+TeamRoger t111201.TeamRoger
+PulpoPaulTeam t111211.PulpoPaulTeam
+JLJATeam t111207.JLJATeam
+RascaYGana t111204.t111204UCMPlayer
+SchalkeTemeto t111208.SchalkeTemeto
+QpxoTeam t111213.Grupo13Team
