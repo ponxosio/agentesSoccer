@@ -49,39 +49,55 @@ public final class Stimuli {
 
     static double s_keepGoal = 0.05d;
 
+
+    /*
+     * WITH BALL STIMULI
+     */
+
     public static double advanceStimuliBall (RobotAPI api, Vec2 advanceVector) {
         double vuelta = 0.0d;
         double sigma_sn = 0.30d;
 
-        int actualTerr = getPlayersActualTerritory(api);
+        int nextTerr = getPlayersActualTerritory(api.getPosition(), api.getFieldSide());
 
-        if (actualTerr != 6) {
+        if (nextTerr != 5) {
             //get next territory
-            actualTerr = (actualTerr + 1) % 6;
+            nextTerr = (nextTerr + 1);
 
-            double factorNextTer = situationFactor(api, actualTerr);
-            double defenseFactor = defenseFactor(api);
+            double factorNextTer = situationFactor(getMatesFieldCoordinates(api),
+                                                    getOpponentsFieldCoordinates(api),
+                                                    nextTerr,
+                                                    api.getFieldSide());
+            double defenseFactor = defenseFactor(api.toFieldCoordinates(api.getBall()),
+                                                api.toFieldCoordinates(api.getOurGoal()),
+                                                api.toFieldCoordinates(api.getOpponentsGoal()));
 
-            ArrayList<Vec2> selectedPoints = new ArrayList<>();
-            double[] coverageFactor = coverageFactor(api, selectedPoints);
+            Vec2 p1 = new Vec2();
+            Vec2 p2 = new Vec2();
+            double[] coverageFactor = coverageFactor(api.getPosition(),
+                                                    api.toFieldCoordinates(api.getOpponentsGoal()),
+                                                    getOpponentsFieldCoordinates(api),
+                                                    p1,
+                                                    p2);
 
-            ArrayList<Vec2> penetrationVector = new ArrayList<>();
-            penetrationFactor(api, selectedPoints.get(0), selectedPoints.get(1), coverageFactor[1], coverageFactor[2], penetrationVector);
-
-            advanceVector.setx(penetrationVector.get(0).x);
-            advanceVector.sety(penetrationVector.get(0).y);
-            advanceVector.setr(penetrationVector.get(0).r);
-            advanceVector.sett(penetrationVector.get(0).t);
+            penetrationFactor(api.getPosition(),p1,p2,coverageFactor[1],advanceVector);
 
             vuelta = defenseFactor * (sigma_sn * factorNextTer + (1 - sigma_sn) * coverageFactor[0]);
-        }
+        } else {
+            Vec2 p1 = new Vec2();
+            Vec2 p2 = new Vec2();
+            double[] coverageFactor = coverageFactor(api.getPosition(),
+                    api.toFieldCoordinates(api.getOpponentsGoal()),
+                    getOpponentsFieldCoordinates(api),
+                    p1,
+                    p2);
 
+            vuelta = penetrationFactor(api.getPosition(),p1,p2,coverageFactor[1],advanceVector);
+        }
         return vuelta;
     }
 
-    public static double passToPlayerStimuli (RobotAPI me,  RobotAPI player2pass, Vec2 opponent, Vec2 passVector) {
-        double stimuli;
-
+    public static double passToPlayerStimuli (RobotAPI playeri,  Vec2 playerjPos, double p2Angle, Vec2 passVector) {
         double sigma = 1.5d;
         double sigma_c = 0.4d;
         double sigma_d = 0.25;
@@ -93,8 +109,8 @@ public final class Stimuli {
 
 
         //calculate line lb
-        Vec2 mePos = me.toFieldCoordinates(me.getPosition());
-        Vec2 p2Pos = player2pass.toFieldCoordinates(player2pass.getPosition());
+        Vec2 mePos = playeri.toFieldCoordinates(playeri.getPosition());
+        Vec2 p2Pos = new Vec2(playerjPos);
 
         Vec2 lb = new Vec2(mePos);
         lb.sub(p2Pos);
@@ -117,97 +133,146 @@ public final class Stimuli {
         Vec2 halfpoint = new Vec2(vmePos.x(), vmePos.y());
 
         //getting coverages factor
-        ArrayList<Vec2> points = new ArrayList<>();
-        double[] p2coverage = coverageFactor(player2pass, points);
-        double[] meCoverage = coverageFactor(me, points);
+        double[] pjcoverage = coverageFactor(p2Pos,
+                                             playeri.toFieldCoordinates(playeri.getOpponentsGoal()),
+                                             getOpponentsFieldCoordinates(playeri),
+                                             new Vec2(),
+                                             new Vec2());
 
-        double competition = competitionFactor(player2pass, opponent, halfpoint);
-        double p2situation = situationFactor(player2pass, getPlayersActualTerritory(player2pass));
+        double[] picoverage = coverageFactor(playeri.getPosition(),
+                                            playeri.toFieldCoordinates(playeri.getOpponentsGoal()),
+                                            getOpponentsFieldCoordinates(playeri),
+                                            new Vec2(),
+                                            new Vec2());
 
-        stimuli = sigma_c * (1.0d/(1.0d + Math.exp(-nu * (p2coverage[0]/meCoverage[0]) + beta))) + sigma_d * Math.exp(-sigma*lbDis) + sigma_cp*competition + sigma_s*p2situation;
+        //calculating line playeri playerj
+        math.geom2d.line.Line2D line = new math.geom2d.line.Line2D(mePos.x, mePos.y, p2Pos.x, p2Pos.y);
 
-        return stimuli;
+        Vec2 piClossestOpp = playeri.toFieldCoordinates(playeri.getClosestOpponent());
+        Vec2 pjClossestOpp = getClosestOpponent(playeri, p2Pos);//playerj.toFieldCoordinates(playerj.getClosestOpponent());
+
+        Vec2 opponent;
+        if (line.distance(piClossestOpp.x,piClossestOpp.y) > line.distance(pjClossestOpp.x, pjClossestOpp.y)) {
+            opponent = pjClossestOpp;
+        } else {
+            opponent = piClossestOpp;
+        }
+
+        double competition = competitionFactor(playeri.toFieldCoordinates(playeri.getBall()),
+                                                opponent,p2Pos, p2Angle);
+        double pjsituation = situationFactor(getMatesFieldCoordinates(playeri),
+                                             getOpponentsFieldCoordinates(playeri),
+                                             getPlayersActualTerritory(p2Pos, playeri.getFieldSide()),
+                                             playeri.getFieldSide());
+
+       return (sigma_c * (1.0d/(1.0d + Math.exp(-nu * (pjcoverage[0]/picoverage[0]) + beta))) + sigma_d * Math.exp(-sigma*lbDis) + sigma_cp*competition + sigma_s*pjsituation);
     }
 
-    public static double shootStimuli (RobotAPI api, Vec2 shotVector) {
-        double stimuli;
+    private static Vec2 getClosestOpponent(RobotAPI api, Vec2 me) {
+        Vec2[] opponents = getOpponentsFieldCoordinates(api);
+
+        Vec2 clossest = opponents[0];
+        Vec2 closest2me = new Vec2(me);
+        closest2me.sub(clossest);
+        for (int i = 1; i < opponents.length; i++) {
+            Vec2 act2me = new Vec2(me);
+            act2me.sub(opponents[i]);
+            if (act2me.r < closest2me.r) {
+                clossest = opponents[i];
+                closest2me = new Vec2(me);
+                closest2me.sub(clossest);
+            }
+        }
+        return clossest;
+    }
+
+    public static double[] shootStimuli (RobotAPI me, Vec2 shotVector, Vec2 assistVector, Vec2 assistPlayer) {
+        double[] stimuli = new double[2];
+
         double sigma_s = 0.5d;
 
-        double defense = defenseFactor(api);
+        double defense = defenseFactor(me.toFieldCoordinates(me.getBall()),
+                                        me.toFieldCoordinates(me.getOurGoal()),
+                                        me.toFieldCoordinates(me.getOpponentsGoal()));
 
-        ArrayList<Vec2> shootVectors = new ArrayList<>();
-        double shoot = shootingFactor(api, shootVectors);
-        shotVector.setx(shootVectors.get(0).x);
-        shotVector.sety(shootVectors.get(0).y);
+        double shoot = shootingFactor(me.getPosition(),
+                                        me.getSteerHeading(),
+                                        me.toFieldCoordinates(me.getOpponentsGoal()),
+                                        getOpponentsFieldCoordinates(me),
+                                        me.getFieldSide(),
+                                        shotVector);
 
-        ArrayList<Vec2> areaPoints = new ArrayList<>();
-        double[] coverage = coverageFactor(api, areaPoints);
+        Vec2 p1 = new Vec2();
+        Vec2 p2 = new Vec2();
+        double[] coverage = coverageFactor(me.getPosition(),
+                me.toFieldCoordinates(me.getOpponentsGoal()),
+                getOpponentsFieldCoordinates(me),
+                p1, p2);
 
-        ArrayList<Vec2> penetration = new ArrayList<>();
-        double penetrationAssist = penetrationAssistfactor(api, areaPoints.get(0), areaPoints.get(1), coverage[1], coverage[2], penetration);
 
-        stimuli = (1 - defense) * (sigma_s * shoot + (1-sigma_s)*(1-penetrationAssist));
-        return stimuli;
-    }
+        double penetrationAssist = penetrationAssistfactor(me.getPosition(),
+                                    me.toFieldCoordinates(me.getOpponentsGoal()),
+                                    getMatesFieldCoordinates(me),
+                                    p1, p2, coverage[1], coverage[2],
+                                    assistVector,
+                                    assistPlayer);
 
-    public static double passAssistStimuli (RobotAPI api, Vec2 passVector) {
-        double stimuli;
-        double sigma_S = 0.5d;
-
-        double defense = defenseFactor(api);
-
-        ArrayList<Vec2> shootVectors = new ArrayList<>();
-        double shoot = shootingFactor(api, shootVectors);
-
-        ArrayList<Vec2> areaPoints = new ArrayList<>();
-        double[] coverage = coverageFactor(api, areaPoints);
-
-        ArrayList<Vec2> penetration = new ArrayList<>();
-        double penetrationAssist = penetrationAssistfactor(api, areaPoints.get(0), areaPoints.get(1), coverage[1], coverage[2], penetration);
-        passVector.setx(penetration.get(0).x);
-        passVector.sety(penetration.get(0).y);
-
-        stimuli = (1-defense) * ((1-sigma_S)*penetrationAssist + sigma_S*shoot);
-
+        stimuli[0] = (1.0 - defense) * (sigma_s * shoot + (1.0 - sigma_s)*(1.0 - penetrationAssist));
+        stimuli[1] = (1.0 - defense) * ((1.0 - sigma_s) * penetrationAssist + sigma_s*(1.0 - shoot));
         return stimuli;
     }
 
     public static double clearStimuli (RobotAPI api, Vec2 clearVec) {
-        double stimuli;
+        double defense = defenseFactor(api.toFieldCoordinates(api.getBall()),
+                                        api.toFieldCoordinates(api.getOurGoal()),
+                                        api.toFieldCoordinates(api.getOpponentsGoal()));
 
-        double defense = defenseFactor(api);
+        int actualTerr = getPlayersActualTerritory(api.getPosition(), api.getFieldSide());
+        double situation = situationFactor(getMatesFieldCoordinates(api),
+                                            getOpponentsFieldCoordinates(api),
+                                            actualTerr,
+                                            api.getFieldSide());
 
-        int actualTerr = getPlayersActualTerritory(api);
-        double situation = situationFactor(api, actualTerr);
+        Vec2 p2 = new Vec2();
+        Vec2 p1 = new Vec2();
+        double[] coverage = coverageFactor(api.getPosition(),
+                                            api.toFieldCoordinates(api.getOpponentsGoal()),
+                                            getOpponentsFieldCoordinates(api), p1, p2);
+        penetrationFactor(api.getPosition(),p1,p2, coverage[1], clearVec);
 
-        ArrayList<Vec2> areaPoints = new ArrayList<>();
-        double[] coverage = coverageFactor(api, areaPoints);
-        ArrayList<Vec2> penetration = new ArrayList<>();
-        penetrationAssistfactor(api, areaPoints.get(0), areaPoints.get(1), coverage[1], coverage[2], penetration);
-
-        clearVec.setx(penetration.get(0).x);
-        clearVec.sety(penetration.get(0).y);
-
-        stimuli = defense * (1 - situation);
-        return stimuli;
+        return (defense * (1 - situation));
     }
+
+    //WITHOUT BALL STIMULI
 
     public static double advanceStimuli(RobotAPI api, Vec2 advanceVector) {
         double stimuli = 0.0d;
-        double sigma_s = 0.40d;
+        double sigma_s = 0.60d;
         double nu = 7.0d;
         double beta = 7.0d;
 
-        int actualTerr = getPlayersActualTerritory(api);
-        if (actualTerr != 6) {
-            int nextTerr = (actualTerr + 1) % 6;
-            double actualSituationFactor = situationFactor(api, actualTerr);
-            double nextSituationFactor = situationFactor(api, nextTerr);
-            double defense = defenseFactor(api);
+        int actualTerr = getPlayersActualTerritory(api.getPosition(),api.getFieldSide());
+        if (actualTerr != 5) {
+            int nextTerr = actualTerr + 1;
+            double actualSituationFactor = situationFactor(getMatesFieldCoordinates(api),
+                                                            getOpponentsFieldCoordinates(api),
+                                                            actualTerr, api.getFieldSide());
+
+            double nextSituationFactor = situationFactor(getMatesFieldCoordinates(api),
+                                                        getOpponentsFieldCoordinates(api),
+                                                        nextTerr, api.getFieldSide());
+
+            double defense = defenseFactor(api.toFieldCoordinates(api.getBall()),
+                                            api.toFieldCoordinates(api.getOurGoal()),
+                                            api.toFieldCoordinates(api.getOpponentsGoal()));
 
             stimuli = sigma_s * (1.0d/ (1.0d + Math.exp(-nu * (nextSituationFactor/actualSituationFactor) + beta))) + (1-sigma_s)*(1- defense);
 
+            //calculate vector sign
             Vec2 advance = calculateadvanceVector(api, true);
+            if (Math.signum(advance.x) != Math.signum(api.toFieldCoordinates(api.getOpponentsGoal()).x)) {
+                advance.setx(-1.0 * advance.x);
+            }
 
             advanceVector.setx(advance.x);
             advanceVector.sety(advance.y);
@@ -221,16 +286,22 @@ public final class Stimuli {
         double nu = 7.0d;
         double beta = 7.0d;
 
-        int actualTerr = getPlayersActualTerritory(api);
-        if (actualTerr != 6) {
+        int actualTerr = getPlayersActualTerritory(api.getPosition(),api.getFieldSide());
+        if (actualTerr != 0) {
             int prevTerr = (actualTerr - 1);
-            prevTerr = prevTerr < 0 ? 0 : prevTerr;
 
-            double actualSituationFactor = situationFactor(api, actualTerr);
-            double prevSituationFactor = situationFactor(api, prevTerr);
-            double defense = defenseFactor(api);
+            double actualSituationFactor = situationFactor(getMatesFieldCoordinates(api),
+                                                            getOpponentsFieldCoordinates(api),
+                                                            actualTerr, api.getFieldSide());
 
-            stimuli = sigma_s * (1.0d/ (1.0d + Math.exp(-nu * (actualSituationFactor/prevSituationFactor) + beta))) + (1-sigma_s)*(defense);
+            double prevSituationFactor = situationFactor(getMatesFieldCoordinates(api),
+                                                            getOpponentsFieldCoordinates(api),
+                                                            prevTerr, api.getFieldSide());
+            double defense = defenseFactor(api.toFieldCoordinates(api.getBall()),
+                                            api.toFieldCoordinates(api.getOurGoal()),
+                                            api.toFieldCoordinates(api.getOpponentsGoal()));
+
+            stimuli = sigma_s * (1.0d/ (1.0d + Math.exp(-nu * (actualSituationFactor/prevSituationFactor) + beta))) + (1.0d - sigma_s)*(defense);
 
             Vec2 advance = calculateadvanceVector(api, false);
 
@@ -240,41 +311,83 @@ public final class Stimuli {
         return stimuli;
     }
 
-    public static double blockPlayerStimuli (RobotAPI me, Vec2 opponent) {
-        double stimuli;
+    public static double blockPlayerStimuli (RobotAPI player_i, Vec2 player_j, Vec2 player2Block) {
         double sigma_c = 1.0d;
         double sigma_a = 0.4d;
 
-        Vec2 ball = me.toFieldCoordinates(me.getBall());
-        double competitionFactor = competitionFactor(me, opponent, ball);
+        double competitionFactor_i_j = competitionFactor(player_i.toFieldCoordinates(player_i.getBall()),
+                                                    player_j, player_i.getPosition(), player_i.getSteerHeading());
+        Vec2 p1 = new Vec2();
+        Vec2 p2 = new Vec2();
+        double[] coverage_j = coverageFactor(player_j,
+                                            player_i.toFieldCoordinates(player_i.getOurGoal()),
+                                            getMatesFieldCoordinates(player_i),p1,p2);
+        Vec2 auxPlayer2Block = new Vec2();
+        double penetrationAssist_j = penetrationAssistfactor(player_j,
+                                                            player_i.toFieldCoordinates(player_i.getOurGoal()),
+                                                            getOpponentsFieldCoordinates(player_i),
+                                                            p1, p2, coverage_j[1], coverage_j[2], new Vec2(), auxPlayer2Block);
 
-        ArrayList<Vec2> areaPoints = new ArrayList<>();
+        double penetrationFactor_j = penetrationFactor(player_j, p1, p2, coverage_j[1], new Vec2());
 
-        double[] coverage = coverageFactor(opponent, areaPoints);
-        ArrayList<Vec2> penetration = new ArrayList<>();
-        double penetrationAssist = penetrationAssistfactor(opponent, areaPoints.get(0), areaPoints.get(1), coverage[1], coverage[2], penetration);
-        double penetrationFactor = penetrationFactor(opponent, areaPoints.get(0), areaPoints.get(1), coverage[1], coverage[2], penetration);
+        if ( penetrationAssist_j < penetrationFactor_j) {
+            auxPlayer2Block = player_j;
+        }
 
-        stimuli = sigma_c * (1 - competitionFactor)*(sigma_a*penetrationAssist + (1-sigma_a)*penetrationFactor);
+        player2Block.setx(auxPlayer2Block.x);
+        player2Block.sety(auxPlayer2Block.y);
 
-        return stimuli;
+        return (sigma_c * (1 - competitionFactor_i_j)*(sigma_a*penetrationAssist_j + (1-sigma_a)*penetrationFactor_j));
     }
 
-    public static double coverGoalStimuli (RobotAPI me) {
-        double sigma_d = 0.4d;
+    public static double coverGoalStimuli (RobotAPI me, Vec2 coverVec) {
+        double sigma_d = 0.2d;
 
-        double defenseFactor = defenseFactor(me);
-        double keepGoalFactor = keepGoalFactor(me);
+        double defenseFactor = defenseFactor(me.toFieldCoordinates(me.getBall()),
+                                            me.toFieldCoordinates(me.getOurGoal()),
+                                            me.toFieldCoordinates(me.getOpponentsGoal()));
 
-        double stimuli = (1 - sigma_d) * defenseFactor + sigma_d*keepGoalFactor;
-        return stimuli;
+        double keepGoalFactor = keepGoalFactor(getMatesFieldCoordinates(me),me.getFieldSide());
+
+        //calculating coverVec
+        Vec2 me2goal = me.getOurGoal();
+        Vector2D playerToGoal = new Vector2D(me2goal.x, me2goal.y);
+        playerToGoal = playerToGoal.normalize();
+        playerToGoal.times(5.0d);
+
+        Vector2D auxCoverVec = new Vector2D(playerToGoal.x(), playerToGoal.y());
+        Vec2[] mates = me.getTeammates();
+        Rectangle2D goalArea = goalArea(me.getFieldSide());
+        for (Vec2 mate : mates) {
+            Vec2 matePossition = me.toFieldCoordinates(mate);
+            if (goalArea.contains(matePossition.x, matePossition.y)) {
+                Vector2D mateVector = new Vector2D(mate.x, mate.y);
+                mateVector = mateVector.normalize();
+                mateVector.times(-1.0);
+
+                auxCoverVec.plus(mateVector);
+            }
+        }
+
+        coverVec.setx(auxCoverVec.x());
+        coverVec.sety(auxCoverVec.y());
+        return ((1 - sigma_d) * defenseFactor + sigma_d*keepGoalFactor);
     }
 
-    public static double goToBallStimuli (RobotAPI api) {
-        double sigma_b = 15.0d;
+    public static double interceptStimuli (RobotAPI me, Vec2 mainAttacker, Vec2 interceptVector) {
+        return interceptFactor(me.getPosition(),
+                                me.toFieldCoordinates(me.getOurGoal()),
+                                mainAttacker, me.getFieldSide(), interceptVector);
+    }
+
+    public static double goToBallStimuli (RobotAPI api, Vec2 ballVec) {
+        double sigma_b = 3.0d;
         Vec2 ball = api.getBall();
 
-        return Math.exp(sigma_b * ball.r);
+        ballVec.setx(ball.x);
+        ballVec.sety(ball.y);
+
+        return Math.min(Math.exp(-sigma_b * ball.r + 1.0), 1.0);
     }
 
     static Vec2 calculateadvanceVector(RobotAPI api, boolean advance) {
@@ -308,7 +421,9 @@ public final class Stimuli {
         return advanceVector;
     }
 
-    static double scoreFactor (RobotAPI api) {
+    //FACTORS
+
+    public static double scoreFactor (RobotAPI api) {
         int mScore = api.getMyScore();
         int oScore = api.getOpponentScore();
 
@@ -316,7 +431,7 @@ public final class Stimuli {
         return vuelta;
     }
 
-    static double timeFactor (RobotAPI api) {
+    public static double timeFactor (RobotAPI api) {
         long timeRemaining = api.getMatchRemainingTime();
         long timeTotal = api.getMatchTotalTime();
 
@@ -324,96 +439,57 @@ public final class Stimuli {
         return vuelta;
     }
 
-    static double defenseFactor(RobotAPI api) {
-        Vec2 ourGoal = api.toFieldCoordinates(api.getOurGoal());
-        Vec2 oppGoal = api.toFieldCoordinates(api.getOpponentsGoal());
-        Vec2 ball = api.toFieldCoordinates(api.getBall());
-
+    static double defenseFactor(Vec2 ball, Vec2 ourGoal, Vec2 oppGoal) {
         double d1 = ball.distance(oppGoal);
         double d2 = ball.distance(ourGoal);
 
         return Math.exp(-s_defense*(d1/d2));
     }
 
-    static double competitionFactor(RobotAPI our, Vec2 opponent, Vec2 point) {
-        Vec2 ourP = our.toFieldCoordinates(our.getPosition());
-        Vec2 oppP = opponent;
+    static double competitionFactor(Vec2 ball, Vec2 opponent, Vec2 me, double myAngle) {
+        Vec2 ballOpponentV = new Vec2(ball);
+        ballOpponentV.sub(opponent);
+        double d2 = ballOpponentV.r;
 
-        Vec2 ourDir = new Vec2();
-        ourDir.rotate(our.getSteerHeading());
-        Vec2 oppDir = new Vec2();
-        oppDir.rotate(our.getSteerHeading());
+        Vec2 ballPlayerV = new Vec2(ball);
+        ballPlayerV.sub(me);
+        double d1 = ballPlayerV.r;
 
-        Vec2 d1 = new Vec2(point);
-        d1.sub(ourP);
-        Vec2 d2 = new Vec2(point);
-        d2.sub(oppP);
+        Vec2 plainV = new Vec2(1,0);
+        double sigma1 = Math.abs(plainV.angle(ballPlayerV) - myAngle) * (180/Math.PI);
+        double sigma2 = Math.abs(plainV.angle(ballOpponentV)) * (180/Math.PI);
 
-        double angle1 = ourDir.angle(d1);
-        double angle2 = oppDir.angle(d2);
-
-        return s_competition * Math.exp(-s_competition1 * (d1.t/d2.t)) + (1 - s_competition) * Math.exp(-s_competition2*(angle1/angle2));
+        return s_competition * Math.exp(-s_competition1 * (d1/d2)) + (1.0 - s_competition) * Math.exp(-s_competition2*(sigma1/sigma2));
     }
 
-    static double situationFactor(RobotAPI api, int territory) {
-        Rectangle2D terrArea = getDimensionTerritory(api, territory);
-        Vec2[] mates = api.getTeammates();
-        Vec2[] opp = api.getOpponents();
+    static double situationFactor(Vec2[] mates, Vec2[] opponents, int territory, int myField) {
+        Rectangle2D terrArea = getDimensionTerritory(myField, territory);
 
         int teamMates = 0;
         for (Vec2 v : mates) {
-            Vec2 point = api.toFieldCoordinates(v);
+            Vec2 point = v;
             if (terrArea.contains(point.x ,point.y)) {
                 teamMates++;
             }
         }
 
         int opponts = 0;
-        for (Vec2 v : opp) {
-            Vec2 point = api.toFieldCoordinates(v);
+        for (Vec2 v : opponents) {
+            Vec2 point = v;
             if (terrArea.contains(point.x ,point.y)) {
                 opponts++;
             }
         }
-        return (1 / (1 + Math.exp(-((teamMates - opponts)/s_situation))));
+        return (1.0 / (1.0 + Math.exp(-((teamMates - opponts)/s_situation))));
     }
 
-    static Rectangle2D getDimensionTerritory(RobotAPI api, int territory) {
-        Rectangle2D vuelta;
-
-        switch (territory) {
-            case GOILIE_TERRITORY:
-                vuelta = golieTerritory(api);
-                break;
-            case DEFENSE_TERRITORY:
-                vuelta = defenseTerritory(api);
-                break;
-            case HALF_BACK_TERRITORY:
-                vuelta = halfBackTerritory(api);
-                break;
-            case HALF_FORWARD_TERRITORY:
-                vuelta = halfForwardTerritory(api);
-                break;
-            case FORWARD_TERRITORY:
-                vuelta = forwardTerritory(api);
-                break;
-            case OPPONENTS_GOAL_TERRITORY:
-                vuelta = opponentsGoalTerritory(api);
-                break;
-            default:
-                vuelta = new Rectangle2D();
-                break;
-        }
-        return vuelta;
-    }
-
-    static double[] coverageFactor (RobotAPI api, ArrayList<Vec2> selectedPoints) {
-        ArrayList<Vec2> aheadOpps = ahead(api, api.getOpponents());
+    static double[] coverageFactor (Vec2 me, Vec2 opponentsGoal, Vec2[] opponents , Vec2 selectedPoint1, Vec2 selectedPoint2) {
+        ArrayList<Vec2> aheadOpps = ahead(me, opponents, opponentsGoal);
         double[] vuelta = new double[3];
 
         if (!aheadOpps.isEmpty()) {
-            Vec2 player = api.toFieldCoordinates(api.getPosition());
-            Vec2 goal = api.toFieldCoordinates(api.getOpponentsGoal());
+            Vec2 player = new Vec2(me);
+            Vec2 goal = new Vec2(opponentsGoal);
 
             Vec2 upper = new Vec2(aheadOpps.get(aheadOpps.size() - 1));
             upper.sety(0.7625);
@@ -427,10 +503,10 @@ public final class Stimuli {
             double maxAngleB = 0.0;
             Vec2 maxda1 = new Vec2();
             Vec2 maxda2 = new Vec2();
-
             for (int i = 1; i < aheadOpps.size(); i++) {
                 Vec2 da1 = new Vec2(aheadOpps.get(i - 1));
                 da1.sub(player);
+
                 Vec2 da2 = new Vec2(aheadOpps.get(i));
                 da2.sub(player);
                 double angleA = da1.angle(da2);
@@ -449,14 +525,23 @@ public final class Stimuli {
                     maxda2 = new Vec2(aheadOpps.get(i));
                 }
             }
-            vuelta[0] = 1 - Math.exp(-(maxAngleA + maxAngleB)/s_coverage);
+            maxAngleA = maxAngleA * (180.0/Math.PI);
+            maxAngleB = maxAngleB * (180.0/Math.PI);
+
+            vuelta[0] = 1.0 - Math.exp(-(maxAngleA + maxAngleB)/s_coverage);
             vuelta[1] = maxAngleA;
             vuelta[2] = maxAngleB;
-            selectedPoints.add(maxda1);
-            selectedPoints.add(maxda2);
+
+            //selectedPoints.add(maxda1);
+            selectedPoint1.setx(maxda1.x);
+            selectedPoint1.sety(maxda1.y);
+
+            selectedPoint2.setx(maxda2.x);
+            selectedPoint2.sety(maxda2.y);
         } else {
-            Vec2 player = api.toFieldCoordinates(api.getPosition());
-            Vec2 goal = api.toFieldCoordinates(api.getOpponentsGoal());
+            Vec2 player = new Vec2(me);
+            Vec2 goal =new Vec2(opponentsGoal);
+
             Vec2 goalPlayer = new Vec2(goal);
             goalPlayer.sety(player.y);
 
@@ -478,94 +563,80 @@ public final class Stimuli {
             Vec2 db2 = new Vec2(upper);
             db2.sub(goal);
 
-            double maxAngleA = da1.angle(da2);
-            double maxAngleB = db1.angle(db2);
+            double maxAngleA = da1.angle(da2) * (180.0/Math.PI);
+            double maxAngleB = db1.angle(db2) * (180.0/Math.PI);
 
             vuelta[0] = 1 - Math.exp(-(maxAngleA + maxAngleB)/s_coverage);
             vuelta[1] = maxAngleA;
             vuelta[2] = maxAngleB;
+
+            //selectedPoints.add(maxda1);
+            selectedPoint1.setx(lower.x);
+            selectedPoint1.sety(lower.y);
+
+            selectedPoint2.setx(upper.x);
+            selectedPoint2.sety(upper.y);
         }
 
         return vuelta;
     }
 
-   /* public static Point2D.Float getIntersectionPoint(Line2D.Float line1, Line2D.Float line2) {
-        if (! line1.intersectsLine(line2) ) return null;
-        double px = line1.getX1(),
-                py = line1.getY1(),
-                rx = line1.getX2()-px,
-                ry = line1.getY2()-py;
-        double qx = line2.getX1(),
-                qy = line2.getY1(),
-                sx = line2.getX2()-qx,
-                sy = line2.getY2()-qy;
-
-        double det = sx*ry - sy*rx;
-        if (det == 0) {
-            return null;
-        } else {
-            double z = (sx*(qy-py)+sy*(px-qx))/det;
-            if (z==0 ||  z==1) return null;  // intersection at end point!
-            return new Point2D.Float(
-                    (float)(px+z*rx), (float)(py+z*ry));
-        }
-    }*/
-
-    static double penetrationFactor (RobotAPI api, Vec2 da1, Vec2 da2, double angleA, double angleB, ArrayList<Vec2> penetrationvectors) {
+    static double penetrationFactor (Vec2 me, Vec2 p1, Vec2 p2, double angleA, Vec2 penetrationvector) {
         double vuelta = 0.0d;
+        Vec2 player = new Vec2(me);
 
+        Vec2 vp1 = new Vec2(p1);
+        vp1.sub(player);
 
-            Vec2 player = api.toFieldCoordinates(api.getPosition());
+        Vec2 vp2 = new Vec2(p2);
+        vp2.sub(player);
 
-            Vec2 vda1 = new Vec2(da1);
-            da1.sub(player);
-            Vec2 vda2 = new Vec2(da2);
-            da2.sub(player);
+        //closest distance from opponent to player
+        double d3 = Math.max(vp1.r, vp2.r);
 
-            //closest distance from opponent to player
-            double d3 = Math.max(vda1.r, vda2.r);
+        //calculate line la: player -> laEndp
+        vp2.rotate(angleA / 2.0d);
+        //return penetration vector
+        penetrationvector.setx(vp2.x);
+        penetrationvector.sety(vp2.y);
 
-            //calculate line la: player -> laEndp
-            vda2.rotate(-(angleA / 2.0d));
-            //return penetration vector
-            penetrationvectors.add(new Vec2(vda2));
+        Vec2 laEndp = new Vec2(player);
+        laEndp.add(vp2);
 
-            Vec2 laEndp = new Vec2(player);
-            laEndp.add(vda2);
+        //closest distance from opponent to penetration line la
+        double d1 = Math.max(Line2D.Double.ptLineDist(player.x, player.y, laEndp.x, laEndp.y, p1.x, p1.y),
+                Line2D.Double.ptLineDist(player.x, player.y, laEndp.x, laEndp.y, p2.x, p2.y));
 
-            //closest distance from opponent to penetration line la
-            double d1 = Math.max(Line2D.Double.ptLineDist(player.x, player.y, laEndp.x, laEndp.y, da1.x, da1.y),
-                    Line2D.Double.ptLineDist(player.x, player.y, laEndp.x, laEndp.y, da2.x, da2.y));
+        // penetration factor
+        vuelta = 1 - 0.5 * Math.exp((-d3) / s_penetration1) - 0.5 * Math.exp((-d3 * s_penetration2 - d1 * s_penetration1) / (s_penetration1 * s_penetration2));
 
-        if (api.closestToBall()) {
-            // penetration factor
-            vuelta = 1 - 0.5 * Math.exp((-d3) / s_penetration1) - 0.5 * Math.exp((-d3 * s_penetration2 - d1 * s_penetration1) / (s_penetration1 * s_penetration2));
-        }
         return vuelta;
     }
 
-    static double penetrationAssistfactor(RobotAPI api, Vec2 da1, Vec2 da2, double angleA, double angleB, ArrayList<Vec2> penetrationvectors) {
-        double vuelta;
-        Vec2 player = api.toFieldCoordinates(api.getPosition());
-        Vec2 goal = api.toFieldCoordinates(api.getOpponentsGoal());
+    static double penetrationAssistfactor(Vec2 me, Vec2 oppGoal, Vec2[] mates, Vec2 p1, Vec2 p2, double angleA, double angleB, Vec2 penetrationvector, Vec2 assistPlayer) {
+        double vuelta = 0.0;
+        Vec2 player = new Vec2(me);
+        Vec2 goal = new Vec2(oppGoal);
 
-        Vec2 vda1 = new Vec2(da1);
-        da1.sub(player);
-        Vec2 vda2 = new Vec2(da2);
-        da2.sub(player);
+        Vec2 vda1 = new Vec2(p1);
+        vda1.sub(player);
+        Vec2 vda2 = new Vec2(p2);
+        vda2.sub(player);
 
         //closest distance from opponent to player
         double d3 = Math.max(vda1.r, vda2.r);
 
         //calculate line la: player -> laEndp
-        vda2.rotate(-(angleA/2.0d));
+        vda2.rotate(angleA/2.0d);
+
         Vec2 laEndp = new Vec2(player);
         laEndp.add(vda2);
 
         //calculate line lb: player -> lbEndp
-        Vec2 vdb2 = new Vec2(da2);
+        Vec2 vdb2 = new Vec2(p2);
         vdb2.sub(goal);
-        vdb2.rotate(-(angleB/2.0d));
+        vdb2.rotate(-angleB/2.0d);
+
         Vec2 lbEndp = new Vec2(goal);
         lbEndp.add(vdb2);
 
@@ -574,40 +645,47 @@ public final class Stimuli {
                 new math.geom2d.Point2D(laEndp.x,laEndp.y),
                 new math.geom2d.Point2D(goal.x, goal.y),
                 new math.geom2d.Point2D(lbEndp.x, lbEndp.y));
-        //distance from closest mate to intersect d2
-        Vec2 intersectVec2 = new Vec2(intersect.x(), intersect.y());
-        Vec2 assist = closesMateToPoint(api, intersectVec2);
-        penetrationvectors.add(assist);
-        double d2 = assist.distance(intersectVec2);
 
-        // penetration factor
-        vuelta = Math.exp((-s_penetration3*d3 - s_penetration1*d2)/(s_penetration1*s_penetration3));
+        if (intersect != null) {
+            //distance from closest mate to intersect d2
+            Vec2 intersectVec2 = new Vec2(intersect.x(), intersect.y());
+            Vec2 assist = closesMateToPoint(mates, intersectVec2);
 
+            assistPlayer.setx(assist.x);
+            assistPlayer.sety(assist.y);
+            penetrationvector.setx(assist.x);
+            penetrationvector.sety(assist.y);
+
+            double d2 = assist.distance(intersectVec2);
+
+            // penetration factor
+            vuelta = Math.exp((-s_penetration3 * d3 - s_penetration1 * d2) / (s_penetration1 * s_penetration3));
+        }
         return vuelta;
     }
 
-    static double shootingFactor (RobotAPI api, ArrayList<Vec2> shootVector) {
+    static double shootingFactor (Vec2 me, double myAngle, Vec2 opponentsGoal, Vec2[] opponents, int fieldSide, Vec2 shootVector) {
         double vuelta = 0.0d;
 
+        Vec2 player = new Vec2(me);
+        Vec2 goal = new Vec2(opponentsGoal);
 
-            Vec2 player = api.toFieldCoordinates(api.getPosition());
-            Vec2 goal = api.toFieldCoordinates(api.getOpponentsGoal());
+        //calculating goal line
+        math.geom2d.line.Line2D goalLine = new math.geom2d.line.Line2D(fieldSide * -1.37d, 0.7625d, fieldSide * -1.37d, -0.7625d);
 
-            Vec2 d1LineEnd = new Vec2(player);
-            d1LineEnd.setx(goal.x);
-            math.geom2d.line.Line2D goalLine = new math.geom2d.line.Line2D(api.getFieldSide() * -1.37d, 0.7625d, api.getFieldSide() * -1.37d, -0.7625d);
+        //calculating shoot vector
+        Vec2 auxSv = new Vec2(1,0);
+        auxSv.rotate(myAngle);
 
-            //calculating shoot vector
-            d1LineEnd.sub(player);
-            d1LineEnd.rotate(api.getSteerHeading());
-            Vec2 shootEnd = new Vec2(player);
-            shootEnd.add(d1LineEnd);
+        Vec2 shootEnd = new Vec2(player);
+        shootEnd.add(auxSv);
 
-            math.geom2d.line.Line2D shootLine = new math.geom2d.line.Line2D(player.x, player.y, shootEnd.x, shootEnd.y);
+        math.geom2d.line.Line2D shootLine = new math.geom2d.line.Line2D(player.x, player.y, shootEnd.x, shootEnd.y);
 
-            //intersect point
-            Point2D goalShoot = goalLine.intersection(shootLine);
+        //intersect point
+        Point2D goalShoot = goalLine.intersection(shootLine);
 
+        if (goalShoot != null) {
             Vec2 vShoot = new Vec2(goalShoot.x(), goalShoot.y());
             vShoot.sub(player);
 
@@ -615,69 +693,99 @@ public final class Stimuli {
             double d3 = Math.abs(goal.y - goalShoot.y());
 
             Vec2 opp = new Vec2();
-            double d2 = closestOpponentToLine(api, player, new Vec2(goalShoot.x(), goalShoot.y()), opp);
+            double d2 = closestOpponentToLine(opponents, player, new Vec2(goalShoot.x(), goalShoot.y()), opp);
 
             shootVector.add(new Vec2(vShoot));
 
-        if (api.closestToBall()) {
             vuelta = Math.exp(-d1 / s_shooting1) - Math.exp((-d1 * s_shooting2 - d2 * s_shooting1) / (s_shooting1 * s_shooting2)) + penalizacion_shooting * (-1 - Math.exp(-d2 / s_shooting2) + Math.exp(-d3 / s_shooting3) - Math.exp((-d3 * s_shooting3 - d2 * s_shooting2) / (s_shooting3 * s_shooting2)));
         }
         return vuelta;
     }
 
-    /*static double interceptFactor (RobotAPI me, Vec2 opponent, ArrayList<Vec2> shootVector) {
-        double vuelta;
+    static double interceptFactor (Vec2 me, Vec2 myGoal, Vec2 mainAttaker, int fieldSide, Vec2 interceptVector) {
+        double vuelta = 0.0d;
+        Vec2 goal =new Vec2(myGoal);
 
-        Vec2 goal = me.toFieldCoordinates(me.getOurGoal());
-
-        Vec2 d1LineEnd = new Vec2(opponent);
-        d1LineEnd.setx(goal.x);
-        math.geom2d.line.Line2D goalLine = new math.geom2d.line.Line2D(me.getFieldSide()*1.37d,0.7625d,me.getFieldSide()*1.37d,-0.7625d);
+        //calculating goal line
+        math.geom2d.line.Line2D goalLine = new math.geom2d.line.Line2D(-fieldSide*1.37d,0.7625d,-fieldSide*1.37d,-0.7625d);
 
         //calculating shoot vector
-        d1LineEnd.sub(opponent);
-        d1LineEnd.rotate(api.getSteerHeading());
-        Vec2 shootEnd = new Vec2(player);
-        shootEnd.add(d1LineEnd);
+        Vec2 shootVector = new Vec2(myGoal);
+        shootVector.sub(mainAttaker);
 
-        math.geom2d.line.Line2D shootLine = new math.geom2d.line.Line2D(player.x, player.y, shootEnd.x, shootEnd.y);
+        //calculating 2 point of shoot line
+        Vec2 shootEnd = new Vec2(mainAttaker);
+        shootEnd.add(shootVector);
+
+        math.geom2d.line.Line2D shootLine = new math.geom2d.line.Line2D(mainAttaker.x, mainAttaker.y, shootEnd.x, shootEnd.y);
 
         //intersect point
         Point2D goalShoot = goalLine.intersection(shootLine);
 
-        Vec2 vShoot = new Vec2(goalShoot.x(), goalShoot.y());
-        vShoot.sub(player);
+        if (goalShoot != null) {
+            Vec2 vShoot = new Vec2(goalShoot.x(), goalShoot.y());
+            vShoot.sub(me);
 
-        double d1 = vShoot.r;
-        double d3 = Math.abs(goal.y - goalShoot.y());
+            double d1 = vShoot.r;
+            double d3 = Math.abs(goal.y - goalShoot.y());
 
-        double d2 = closestOpponentToLine(api, player, new Vec2(goalShoot.x(), goalShoot.y()));
+            double d2 = Line2D.Double.ptLineDist(mainAttaker.x, mainAttaker.y, shootEnd.x, shootEnd.y, me.x, me.y);
 
-        shootVector.add(new Vec2(vShoot));
+            interceptVector.setx(vShoot.x);
+            interceptVector.sety(vShoot.y);
 
-        vuelta = Math.exp((-d1*s_intercep2*s_intercep3 -d2*s_intercep1*s_intercep3 -d3*s_intercep1*s_intercep2)/(s_intercep1*s_intercep2*s_intercep3));
-
-        return vuelta;
-    }*/
-
-    static double keepGoalFactor (RobotAPI api) {
-        Vec2[] mates = api.getTeammates();
-        Vec2 goal = api.toFieldCoordinates(api.getOurGoal());
-
-        double temp = 0.0;
-        for (int i = 0; i < mates.length; i++){
-            Vec2 v2Goal = new Vec2(goal);
-            v2Goal.sub(mates[i]);
-            temp +=  Math.exp(v2Goal.r/s_keepGoal);
+            vuelta = Math.exp((-d1 * s_intercep2 * s_intercep3 - d2 * s_intercep1 * s_intercep3 - d3 * s_intercep1 * s_intercep2) / (s_intercep1 * s_intercep2 * s_intercep3));
         }
-        double vuelta = (5.0d - temp) / 5.0d;
+
         return vuelta;
     }
 
-    static Vec2 closesMateToPoint (RobotAPI api, Vec2 point) {
-        Vec2[] mates = api.getTeammates();
-        Vec2 closest = mates[0];
+    static double keepGoalFactor (Vec2[] mates, int fieldSide) {
+        double sigma = 0.7;
+        Rectangle2D area = goalArea(fieldSide);
+        int numPlayerArea = 0;
 
+        for(Vec2 mate: mates) {
+            if (area.contains(mate.x,mate.y)) {
+                numPlayerArea++;
+            }
+        }
+        return Math.exp(-sigma * numPlayerArea);
+    }
+
+    //UTILITIES
+
+    static Rectangle2D getDimensionTerritory(int myField, int territory) {
+        Rectangle2D vuelta;
+
+        switch (territory) {
+            case GOILIE_TERRITORY:
+                vuelta = golieTerritory(myField);
+                break;
+            case DEFENSE_TERRITORY:
+                vuelta = defenseTerritory(myField);
+                break;
+            case HALF_BACK_TERRITORY:
+                vuelta = halfBackTerritory(myField);
+                break;
+            case HALF_FORWARD_TERRITORY:
+                vuelta = halfForwardTerritory(myField);
+                break;
+            case FORWARD_TERRITORY:
+                vuelta = forwardTerritory(myField);
+                break;
+            case OPPONENTS_GOAL_TERRITORY:
+                vuelta = opponentsGoalTerritory(myField);
+                break;
+            default:
+                vuelta = new Rectangle2D();
+                break;
+        }
+        return vuelta;
+    }
+
+    static Vec2 closesMateToPoint (Vec2[] mates, Vec2 point) {
+        Vec2 closest = mates[0];
         for (int i = 1; i < mates.length; i++) {
             Vec2 nextMate = mates[i];
             if (closest.distance(point) < nextMate.distance(point)) {
@@ -687,9 +795,7 @@ public final class Stimuli {
         return closest;
     }
 
-    static double closestOpponentToLine (RobotAPI api, Vec2 point1, Vec2 point2, Vec2 opp) {
-        Vec2[] opps = api.getOpponents();
-
+    static double closestOpponentToLine (Vec2[] opps, Vec2 point1, Vec2 point2, Vec2 opp) {
         int max = 0;
         double maxDis = Line2D.Double.ptLineDist(point1.x, point1.y, point2.x, point2.y, opps[0].x, opps[0].y);
         for (int i = 1; i < opps.length; i++) {
@@ -705,15 +811,17 @@ public final class Stimuli {
         return maxDis;
     }
 
-    static ArrayList<Vec2> ahead (RobotAPI api, Vec2[] opponents) {
+    static ArrayList<Vec2> ahead (Vec2 me, Vec2[] opponents, Vec2 oppGoal) {
         ArrayList<Vec2> vuelta = new ArrayList<>();
-        Vec2 oppGoal = api.getOpponentsGoal();
 
-        Vec2 globalOppGoal = api.toFieldCoordinates(oppGoal);
+        Vec2 me2OppG = new Vec2(oppGoal);
+        me2OppG.sub(me);
+
         for(Vec2 opp: opponents) {
-            Vec2 dist = api.toFieldCoordinates(opp);
-            dist.sub(globalOppGoal);
-            if (dist.r < oppGoal.r) {
+            Vec2 dist = new Vec2(opp);
+            dist.sub(oppGoal);
+
+            if (dist.r < me2OppG.r) {
                 vuelta.add(opp);
             }
         }
@@ -722,70 +830,87 @@ public final class Stimuli {
         return vuelta;
     }
 
-    static int getPlayersActualTerritory(RobotAPI api) {
-        Vec2 player = api.toFieldCoordinates(api.getPosition());
+    static int getPlayersActualTerritory(Vec2 player, int myField) {
         int territory = 0;
         boolean finded = false;
         for (int i = 0; !finded && i < 6; i++) {
-            Rectangle2D actualTerr = getTerritory(api, i);
+            Rectangle2D actualTerr = getTerritory(myField, i);
             finded = actualTerr.contains(player.x, player.y);
             territory = i;
         }
         return territory;
     }
 
-    static Rectangle2D getTerritory (RobotAPI api, int territory) {
+    static Rectangle2D getTerritory (int myField, int territory) {
         Rectangle2D finded = null;
         switch(territory) {
             case GOILIE_TERRITORY:
-                finded = golieTerritory(api);
+                finded = golieTerritory(myField);
                 break;
             case DEFENSE_TERRITORY:
-                finded = defenseTerritory(api);
+                finded = defenseTerritory(myField);
                 break;
             case HALF_BACK_TERRITORY:
-                finded = halfBackTerritory(api);
+                finded = halfBackTerritory(myField);
                 break;
             case HALF_FORWARD_TERRITORY:
-                finded = halfForwardTerritory(api);
+                finded = halfForwardTerritory(myField);
                 break;
             case FORWARD_TERRITORY:
-                finded = forwardTerritory(api);
+                finded = forwardTerritory(myField);
                 break;
             case OPPONENTS_GOAL_TERRITORY:
-                finded = opponentsGoalTerritory(api);
+                finded = opponentsGoalTerritory(myField);
                 break;
         }
         return finded;
     }
 
-    static Rectangle2D golieTerritory (RobotAPI api) {
-        int field = api.getFieldSide();
+    public static Rectangle2D golieTerritory (int field) {
         return new Rectangle2D(field * 1.35, 0.7625, 0.205, 1.525);
     }
 
-    static Rectangle2D defenseTerritory (RobotAPI api) {
-        int field = api.getFieldSide();
+    public static Rectangle2D defenseTerritory (int field) {
         return new Rectangle2D(field * 1.145, 0.7625, 0.5725, 1.525);
     }
 
-    static Rectangle2D halfBackTerritory (RobotAPI api) {
-        int field = api.getFieldSide();
+    public static Rectangle2D halfBackTerritory (int field) {
         return new Rectangle2D(field * 0.5725, 0.7625, 0.5725, 1.525);
     }
 
-    static Rectangle2D opponentsGoalTerritory (RobotAPI api) {
-        int field = api.getFieldSide();
+    public static Rectangle2D opponentsGoalTerritory (int field) {
         return new Rectangle2D(-field * 1.35, 0.7625, 0.205, 1.525);
     }
 
-    static Rectangle2D forwardTerritory (RobotAPI api) {
-        int field = api.getFieldSide();
+    public static Rectangle2D forwardTerritory (int field) {
         return new Rectangle2D(-field * 1.145, 0.7625, 0.5725, 1.525);
     }
 
-    static Rectangle2D halfForwardTerritory (RobotAPI api) {
-        int field = api.getFieldSide();
+    public static Rectangle2D halfForwardTerritory (int field) {
         return new Rectangle2D(-field * 0.5725, 0.7625, 0.5725, 1.525);
+    }
+
+    public static Rectangle2D goalArea (int fieldSide) {
+        return new Rectangle2D(new Point2D(fieldSide * 1.145, 0.25), new Point2D(fieldSide * 1.35, -0.25));
+    }
+
+   public static Vec2[] getOpponentsFieldCoordinates(RobotAPI api) {
+        Vec2[] opponents = api.getOpponents();
+        Vec2[] oppField = new Vec2[opponents.length];
+
+        for (int i = 0; i < opponents.length; i++) {
+            oppField[i] = api.toFieldCoordinates(opponents[i]);
+        }
+        return oppField;
+    }
+
+   public static Vec2[] getMatesFieldCoordinates(RobotAPI api) {
+        Vec2[] mates = api.getTeammates();
+        Vec2[] matesField = new Vec2[mates.length];
+
+        for (int i = 0; i < mates.length; i++) {
+            matesField[i] = api.toFieldCoordinates(mates[i]);
+        }
+        return matesField;
     }
 }

@@ -22,13 +22,12 @@ public class AgentManager extends TeamManager {
 
     @Override
     public Behaviour getDefaultBehaviour(int i) {
-        return _behaviours[Math.min(i,1)];
+        return _behaviours[i];
     }
 
     @Override
     public Behaviour[] createBehaviours() {
-        Behaviour[] vuelta = new Behaviour[2];
-        vuelta[0] = new Passer();
+        Behaviour[] vuelta = {new AgentPlayer(this, 0), new AgentPlayer(this, 1), new AgentPlayer(this, 2), new AgentPlayer(this, 3), new AgentPlayer(this, 4)};
         return vuelta;
     }
 }
