@@ -42,7 +42,7 @@ public class AgentPlayer extends Behaviour {
     public static final double correct_pass = 0.1;
     public static final double enter_oppArea = 0.1;
     public static final double kick_off_area = 0.1;
-    public static final double ball_exit_field = 0.05;
+    public static final double ball_exit_field = 0.0;
 
     //INTERNAL
     //Thresholds
@@ -161,33 +161,29 @@ public class AgentPlayer extends Behaviour {
             }
         }
 
-        if (myRobotAPI.closestToBall()) {
+        /*if (myRobotAPI.closestToBall()) {
             Vec2 me2ball = new Vec2(ball);
             me2ball.sub(myRobotAPI.getPosition());
-            if (me2ball.r <= 0.1) {
+            if (me2ball.r <= 0.2) {
                 if (lastAction > clear) {
-                /* if now can kick and last action was an action without the ball then this player has retreive the ball,
-                 * sends a message to all player so if someone has made a pass know that was a correct pass
-                 * */
+                // if now can kick and last action was an action without the ball then this player has retreive the ball,
+                    // sends a message to all player so if someone has made a pass know that was a correct pass
                     RetreaveMessage message = new RetreaveMessage(System.currentTimeMillis());
                     message.setSender(player);
                     message.setType(Message.Type.broadcast);
                     manager.sendMessage(message);
                 }
                 takeStepWithBall();
-                myRobotAPI.setDisplayString("YES ball");
             } else {
                 takeStepWithOutBall();
-                myRobotAPI.setDisplayString("NO ball");
             }
-        } else {
+        } else {*/
             takeStepWithOutBall();
-            myRobotAPI.setDisplayString("NO ball");
-        }
+        //}
         return RobotAPI.ROBOT_OK;
     }
 
-    private void forgetThresholds() {
+    protected void forgetThresholds() {
         double nu = 0.1d;
         double sigma = 8.0d;
         double alfa = 4.0d;
@@ -246,21 +242,21 @@ public class AgentPlayer extends Behaviour {
         double toBallStimuli = Stimuli.goToBallStimuli(myRobotAPI, toBallVec);
         double p2Ball = toBallStimuli / (toBallStimuli + threshold_go2Ball);
 
-        if (pAdvance >= pRetreat && pAdvance >= pBlock && pAdvance >= pCoverGoal && pAdvance >= pIntercept && pAdvance >= p2Ball) {
+       if (pAdvance >= pRetreat /*&& pAdvance >= pBlock && pAdvance >= pCoverGoal && pAdvance >= pIntercept && pAdvance >= p2Ball*/) {
             //do advance
             myRobotAPI.setDisplayString("advance");
 
             lastAction = advance;
             myRobotAPI.setSteerHeading(advanceVector.t);
             myRobotAPI.setSpeed(1.0d);
-        } else if (pRetreat >= pAdvance && pRetreat >= pBlock && pRetreat >= pCoverGoal && pRetreat >= pIntercept && pRetreat >= p2Ball) {
+        } else /*if (pRetreat >= pAdvance && pRetreat >= pBlock && pRetreat >= pCoverGoal && pRetreat >= pIntercept && pRetreat >= p2Ball) */{
            //do retreat
             myRobotAPI.setDisplayString("retreat");
 
             lastAction = retreat;
             myRobotAPI.setSteerHeading(retreatVec.t);
             myRobotAPI.setSpeed(1.0d);
-        } else if (pBlock >= pRetreat && pBlock >= pAdvance && pBlock >= pCoverGoal && pBlock >= pIntercept && pBlock >= p2Ball) {
+        }/* else if (pBlock >= pRetreat && pBlock >= pAdvance && pBlock >= pCoverGoal && pBlock >= pIntercept && pBlock >= p2Ball) {
            //do Block
             myRobotAPI.setDisplayString("Block");
 
@@ -292,8 +288,9 @@ public class AgentPlayer extends Behaviour {
 
             lastAction = go2Ball;
             myRobotAPI.setSteerHeading(toBallVec.t);
+            myRobotAPI.avoidCollisions();
             myRobotAPI.setSpeed(1.0);
-        }
+        }*/
     }
 
     private void takeStepWithBall() {
@@ -329,17 +326,18 @@ public class AgentPlayer extends Behaviour {
         double clearStimuli = Stimuli.clearStimuli(myRobotAPI, clearVec);
         double pClear = clearStimuli / (clearStimuli + threshold_clear);
 
-        if (pAdvance >= pPass && pAdvance >= pShoot && pAdvance >= pAssist && pAdvance >= pClear) {
+        if (/*pAdvance >= pPass &&*/ pAdvance >= pShoot /*&& pAdvance >= pAssist && pAdvance >= pClear*/) {
             //do advance
             myRobotAPI.setDisplayString("advanceBall");
 
             Vec2 myPosAux = new Vec2(myRobotAPI.getPosition());
+            //advanceVector.normalize(1.0);
             myPosAux.add(advanceVector);
 
             lastAction = advanceBall;
             myRobotAPI.setBehindBall(myPosAux);
             myRobotAPI.setSpeed(1.0);
-        } else if (pPass >= pAdvance && pPass >= pShoot && pPass >= pAssist && pPass >= pClear) {
+        /*} else if (pPass >= pAdvance && pPass >= pShoot && pPass >= pAssist && pPass >= pClear) {
             //do pass
             myRobotAPI.setDisplayString("Pass");
 
@@ -348,15 +346,15 @@ public class AgentPlayer extends Behaviour {
             passedTimeStamp = System.currentTimeMillis();
 
             myRobotAPI.setSteerHeading(passVector.t);
-            myRobotAPI.kick();
-        } else if (pShoot >= pAdvance && pShoot >= pPass && pShoot >= pAssist && pShoot >= pClear) {
+            myRobotAPI.kick();*/
+        } else /*if (pShoot >= pAdvance && pShoot >= pPass && pShoot >= pAssist && pShoot >= pClear)*/ {
             //do shoot
             myRobotAPI.setDisplayString("shoot");
 
             lastAction = shoot;
             myRobotAPI.setSteerHeading(shootVec.t);
             myRobotAPI.kick();
-        } else if (pAssist >= pAdvance && pAssist >= pPass && pAssist >= pShoot && pAssist >= pClear) {
+        } /*else if (pAssist >= pAdvance && pAssist >= pPass && pAssist >= pShoot && pAssist >= pClear) {
             //do assist
             myRobotAPI.setDisplayString("assist");
 
@@ -375,7 +373,7 @@ public class AgentPlayer extends Behaviour {
             lastAction = clear;
             myRobotAPI.setSteerHeading(clearVec.t);
             myRobotAPI.kick();
-        }
+        }*/
 
     }
 
