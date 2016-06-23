@@ -23,20 +23,11 @@ public class Passer extends AgentPlayer {
 
         lastPosition = new Vec2();
         lastBallPosition = new Vec2();
-        updatingThresholds = new Semaphore(1,true);
-        timerForget = new Timer("timerForget");
         times2Forget = 4;
     }
 
     @Override
     public int takeStep() {
-        if (times2Forget == 0) {
-            times2Forget = 4;
-            super.forgetThresholds();
-        } else {
-            times2Forget--;
-        }
-
         lastSterrHeading = myRobotAPI.getSteerHeading();
         lastPosition = myRobotAPI.getPosition();
 

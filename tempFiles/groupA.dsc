@@ -1,7 +1,9 @@
-Hispania t111202.HispaniaTeam
-JAR_Team t111205.t111205UCMPlayer
-Valojo t111210.t111210UCMPlayer
-APITeam t111212.APIAttackUCMPlayer
-GolDeSeñor t111206.GolDeSenyorUCMPlayer
-Boffa_Maisters t111209.equipos.TestPlayer
-ToposTeam t111214.ToposTeam
+teamRocket t101118.EquipoActimel
+SkitHall t101115.SkitHall
+A-team t101113.equipoA
+Catenaccio t101108.Catenaccio
+G3RBT t101103.equipos.G3RBT
+SpTorrejon t101114.team.Team
+Chanantes t101102.Chanantes
+BroncosDeDenver t101112.BroncosDeDenver
+Voidmingham t101109.MyTeam

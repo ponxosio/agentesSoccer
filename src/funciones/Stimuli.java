@@ -334,7 +334,7 @@ public final class Stimuli {
     }
 
     public static double coverGoalStimuli (RobotAPI me, Vec2 coverVec) {
-        double sigma_d = 0.2d;
+        double sigma_d = 0.6d;
 
         double defenseFactor = defenseFactor(me.toFieldCoordinates(me.getBall()),
                                             me.toFieldCoordinates(me.getOurGoal()),
@@ -364,7 +364,8 @@ public final class Stimuli {
 
         coverVec.setx(auxCoverVec.x());
         coverVec.sety(auxCoverVec.y());
-        return ((1 - sigma_d) * defenseFactor + sigma_d*keepGoalFactor);
+        //return ((1 - sigma_d) * defenseFactor + sigma_d*keepGoalFactor);
+        return keepGoalFactor * defenseFactor;
     }
 
     public static double interceptStimuli (RobotAPI me, Vec2 mainAttacker, Vec2 interceptVector) {
@@ -711,41 +712,37 @@ public final class Stimuli {
     }
 
     static double interceptFactor (Vec2 me, Vec2 myGoal, Vec2 mainAttaker, int fieldSide, Vec2 interceptVector) {
-        double vuelta = 0.0d;
-        Vec2 goal =new Vec2(myGoal);
+        double stimuli = 0.0;
+        double sigma_1 = 10.0;
+        double alfa_1 = 2.0;
+        double sigma_2 = 10.0;
+        double alfa_2 = 1.0;
 
-        //calculating goal line
-        math.geom2d.line.Line2D goalLine = new math.geom2d.line.Line2D(-fieldSide*1.37d,0.7625d,-fieldSide*1.37d,-0.7625d);
+        Vec2 player = new Vec2(mainAttaker);
+        Vec2 goal = new Vec2(myGoal);
 
         //calculating shoot vector
-        Vec2 shootVector = new Vec2(myGoal);
-        shootVector.sub(mainAttaker);
+        Vec2 auxSv = new Vec2(goal);
+        auxSv.sub(player);
 
-        //calculating 2 point of shoot line
-        Vec2 shootEnd = new Vec2(mainAttaker);
-        shootEnd.add(shootVector);
+        double d1 = auxSv.r;
 
-        math.geom2d.line.Line2D shootLine = new math.geom2d.line.Line2D(mainAttaker.x, mainAttaker.y, shootEnd.x, shootEnd.y);
+        math.geom2d.line.Line2D shootLine = new math.geom2d.line.Line2D(mainAttaker.x, mainAttaker.y, myGoal.x, myGoal.y);
+        math.geom2d.line.Line2D playerLine = new math.geom2d.line.Line2D(me.x, me.y, me.x, 0.7625);
 
-        //intersect point
-        Point2D goalShoot = goalLine.intersection(shootLine);
+        double d2 = shootLine.distance(me.x, me.y);
 
-        if (goalShoot != null) {
-            Vec2 vShoot = new Vec2(goalShoot.x(), goalShoot.y());
-            vShoot.sub(me);
+        Point2D intersect = shootLine.intersection(playerLine);
+        if (intersect != null) {
+            Vec2 aux = new Vec2(intersect.x(), intersect.y());
+            aux.sub(me);
 
-            double d1 = vShoot.r;
-            double d3 = Math.abs(goal.y - goalShoot.y());
+            interceptVector.sety(aux.x);
+            interceptVector.sety(aux.y);
 
-            double d2 = Line2D.Double.ptLineDist(mainAttaker.x, mainAttaker.y, shootEnd.x, shootEnd.y, me.x, me.y);
-
-            interceptVector.setx(vShoot.x);
-            interceptVector.sety(vShoot.y);
-
-            vuelta = Math.exp((-d1 * s_intercep2 * s_intercep3 - d2 * s_intercep1 * s_intercep3 - d3 * s_intercep1 * s_intercep2) / (s_intercep1 * s_intercep2 * s_intercep3));
+            stimuli = Math.exp(-sigma_1*d1 + alfa_1) * Math.exp(-sigma_2*d2 + alfa_2);
         }
-
-        return vuelta;
+        return stimuli;
     }
 
     static double keepGoalFactor (Vec2[] mates, int fieldSide) {
